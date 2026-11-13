@@ -1,0 +1,440 @@
+/* =======================================================
+   STANDALONE BOOK SERVICE PAGE
+======================================================= */
+
+.booking-body {
+    --bk-primary: #0E7C7B;
+    --bk-primary-hover: #0A5F5E;
+    --bk-on-primary: #FFFFFF;
+
+    --bk-bg: #F4F8F7;
+    --bk-surface: #FFFFFF;
+    --bk-surface-alt: #E6F4F1;
+
+    --bk-text: #22303C;
+    --bk-text-muted: #5F6B76;
+    --bk-border: #D8E7E3;
+    --bk-border-focus: #0E7C7B;
+    --bk-error: #D9383A;
+    --bk-success-bg: #E8F7F3;
+    --bk-success-text: #085D5C;
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--bk-bg);
+    color: var(--bk-text);
+    font-family: inherit;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode.booking-body {
+    --bk-primary: #74D8CE;
+    --bk-primary-hover: #9AE8DF;
+    --bk-on-primary: #102628;
+
+    --bk-bg: #0B161B;
+    --bk-surface: #14262C;
+    --bk-surface-alt: #1A363A;
+
+    --bk-text: #EAF4F4;
+    --bk-text-muted: #B6C7CE;
+    --bk-border: #31505A;
+    --bk-border-focus: #74D8CE;
+    --bk-error: #FF7B7B;
+    --bk-success-bg: #1B3F3D;
+    --bk-success-text: #8BE7DE;
+}
+
+.booking-body * {
+    box-sizing: border-box;
+}
+
+/* Accessibility helper */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* 1. Minimal Topbar */
+.bk-topbar {
+    width: 100%;
+
+    padding: 14px 6%;
+}
+
+.bk-topbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bk-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--bk-text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.bk-back-link:hover {
+    color: var(--bk-primary);
+    transform: translateX(-3px);
+}
+
+.bk-back-link i {
+    font-size: 13px;
+}
+
+.bk-toggles {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bk-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 36px;
+    padding: 6px 14px;
+    background-color: var(--bk-surface-alt);
+    color: var(--bk-text);
+    border: 1px solid var(--bk-border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.bk-toggle-btn:hover {
+    border-color: var(--bk-primary);
+    color: var(--bk-primary);
+}
+
+/* 2. Main Page Wrapper */
+.bk-page-wrapper {
+    flex: 1;
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Standalone Centered Brand & Heading (Above the Card) */
+.bk-brand-heading {
+    text-align: center;
+    margin-bottom: 28px;
+    width: 100%;
+}
+
+.bk-brand-link {
+    display: inline-block;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.bk-brand-logo {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.bk-brand-name {
+    margin: 6px 0 2px;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--bk-primary);
+    letter-spacing: -0.5px;
+}
+
+.bk-brand-subtitle {
+    margin: 0 0 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--bk-text-muted);
+    letter-spacing: 0.5px;
+}
+
+.bk-main-title {
+    margin: 0 0 10px;
+    font-size: clamp(26px, 3.2vw, 36px);
+    line-height: 1.25;
+    color: var(--bk-text);
+}
+
+.bk-intro-subtitle {
+    margin: 0 auto;
+    max-width: 520px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--bk-text-muted);
+}
+
+/* 3. Separate Form Card */
+.bk-card {
+    width: 100%;
+    background-color: var(--bk-surface);
+    border: 1px solid var(--bk-border);
+    border-radius: 16px;
+    padding: 36px 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.bk-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bk-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.bk-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.bk-form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--bk-text);
+}
+
+.bk-required {
+    color: var(--bk-error);
+}
+
+.bk-form-group input,
+.bk-form-group select,
+.bk-form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: var(--bk-surface);
+    color: var(--bk-text);
+    border: 1px solid var(--bk-border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bk-form-group select {
+    cursor: pointer;
+}
+
+.bk-form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.bk-form-group input:focus,
+.bk-form-group select:focus,
+.bk-form-group textarea:focus {
+    outline: none;
+    border-color: var(--bk-border-focus);
+    box-shadow: 0 0 0 3px rgba(14, 124, 123, 0.15);
+}
+
+/* Checkbox */
+.bk-checkbox-group {
+    margin-top: 4px;
+}
+
+.bk-checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--bk-text-muted);
+    cursor: pointer;
+}
+
+.bk-checkbox-label input[type="checkbox"] {
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--bk-primary);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Submit Button */
+.bk-submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 50px;
+    padding: 14px 24px;
+    background-color: var(--bk-primary);
+    color: var(--bk-on-primary);
+    border: 1px solid var(--bk-primary);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+    margin-top: 6px;
+}
+
+.bk-submit-btn:hover {
+    background-color: var(--bk-primary-hover);
+    border-color: var(--bk-primary-hover);
+}
+
+.bk-submit-btn:active {
+    transform: scale(0.99);
+}
+
+.bk-submit-btn i {
+    font-size: 13px;
+}
+
+/* Live Status Message */
+.bk-status-msg {
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.bk-status-msg.is-success {
+    background-color: var(--bk-success-bg);
+    color: var(--bk-success-text);
+    border: 1px solid var(--bk-border);
+}
+
+.bk-status-msg.is-error {
+    background-color: #FEECEB;
+    color: var(--bk-error);
+    border: 1px solid #F8C8C7;
+}
+
+/* Card Bottom Trust Line */
+.bk-card-footer {
+    border-top: 1px solid var(--bk-border);
+    margin-top: 8px;
+    padding-top: 18px;
+    text-align: center;
+}
+
+.bk-card-footer p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--bk-text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.bk-card-footer i {
+    color: var(--bk-primary);
+}
+
+/* Copyright Below */
+.bk-copyright {
+    margin-top: 28px;
+    text-align: center;
+}
+
+.bk-copyright p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--bk-text-muted);
+}
+
+/* RTL Support */
+html[dir="rtl"] .bk-back-link i,
+html[dir="rtl"] .bk-submit-btn i {
+    transform: rotate(180deg);
+}
+
+html[dir="rtl"] .bk-back-link:hover {
+    transform: translateX(3px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+    .bk-page-wrapper {
+        padding: 24px 16px 48px;
+    }
+
+    .bk-card {
+        padding: 26px 20px;
+    }
+
+    .bk-form-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .bk-main-title {
+        font-size: 24px;
+    }
+
+    .bk-intro-subtitle {
+        font-size: 14px;
+    }
+}
+
+/* =====================================================
+   BOOKING FORM: DARK-MODE PLACEHOLDER AND CALENDAR FIX
+   Add after all existing CSS.
+===================================================== */
+
+/* White placeholders: name, phone, email, city, notes */
+body.dark-mode.booking-body .bk-form-group input::placeholder,
+body.dark-mode.booking-body .bk-form-group textarea::placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+/* Native date field and calendar picker */
+body.dark-mode.booking-body .bk-form-group input[type="date"] {
+    color-scheme: dark;
+    color: #FFFFFF;
+}
+
+/* Date text: mm/dd/yyyy and selected date */
+body.dark-mode.booking-body .bk-form-group input[type="date"]::-webkit-datetime-edit {
+    color: #FFFFFF;
+}
+
+/* White calendar icon in Chrome / Edge */
+body.dark-mode.booking-body .bk-form-group input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}

@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Nuring Standered Page</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="home-standard.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Left: Agency branding -->
+            <a href="index.html" class="brand">
+                <span class="brand-icon">
+                    <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                </span>
+
+                <span class="brand-text">
+                    <span class="brand-name">Meridian Home Nursing</span>
+                    <span class="brand-subtitle">
+                        Home Nursing and Patient Care
+                    </span>
+                </span>
+            </a>
+
+            <!-- Middle: Navigation -->
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul class="nav-list">
+
+                    <li class="home-dropdown">
+                        <button type="button" class="home-toggle" id="homeToggle" aria-expanded="false"
+                            aria-controls="homeDropdown">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+
+                        <ul class="dropdown-list" id="homeDropdown" hidden>
+                            <li>
+                                <a href="index.html">Classic</a>
+                            </li>
+
+                            <li>
+                                <a href="home-standard.html">Standard</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Mobile booking link -->
+                <a href="bookserviceform.html" class="mobile-book">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    Book Service
+                </a>
+            </nav>
+
+            <!-- Right: Header controls -->
+            <div class="header-actions">
+
+                <button type="button" class="icon-button" id="rtlToggle" aria-label="Switch to right-to-left layout"
+                    aria-pressed="false" title="Switch to right-to-left layout">
+                    <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="icon-button" id="darkModeToggle" aria-label="Enable dark mode"
+                    aria-pressed="false" title="Enable dark mode">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="bookserviceform.html" class="book-button">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    <span>Book Service</span>
+                </a>
+
+                <button type="button" class="icon-button menu-toggle" id="menuToggle" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="mainNav">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <main class="standard-home">
+
+            <!-- ========================================
+         1. PREMIUM SPLIT HERO
+    ========================================= -->
+            <section class="std-hero" aria-labelledby="std-hero-title">
+                <div class="std-container std-hero-layout">
+
+                    <div class="std-hero-content">
+                        <span class="std-eyebrow">
+                            PERSONALIZED HOME CARE
+                        </span>
+
+                        <h1 id="std-hero-title">
+                            Thoughtful Care.<br>
+                            In the Comfort<br>
+                            <span>of Home.</span>
+                        </h1>
+
+                        <p class="std-lead">
+                            Explore nursing visits, everyday assistance, and
+                            recovery support designed around personal routines,
+                            comfort, and dignity.
+                        </p>
+
+                        <div class="std-actions">
+                            <a href="services.html" class="std-btn">
+                                Explore Services
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="contact.html" class="std-btn std-btn-outline">
+                                Contact Us
+                            </a>
+                        </div>
+
+                        <div class="std-hero-support">
+                            <span class="std-icon">
+                                <i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
+                            </span>
+
+                            <div>
+                                <h2>Support for different care needs</h2>
+
+                                <p>
+                                    Daily assistance &middot; Recovery support
+                                    &middot; Scheduled visits
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="std-hero-visual">
+                        <div class="std-hero-photo">
+                            <img src="Images/indexpage21.jpeg" alt="Nurse caring for a patient at home" width="620"
+                                height="740" fetchpriority="high">
+                        </div>
+
+                        <span class="std-photo-label">
+                            <span aria-hidden="true"></span>
+                            Comfort begins at home
+                        </span>
+
+                        <div class="std-floating-card">
+                            <span class="std-icon">
+                                <i class="fa-solid fa-house-medical" aria-hidden="true"></i>
+                            </span>
+
+                            <div>
+                                <span class="std-small-label">
+                                    A PERSONAL APPROACH
+                                </span>
+
+                                <h2>Care around your routine.</h2>
+
+                                <p>
+                                    Explore support that puts everyday
+                                    comfort and dignity first.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ========================================
+         2. SIGNATURE SERVICES
+    ========================================= -->
+            <section class="std-section" aria-labelledby="std-services-title">
+                <div class="std-container">
+
+                    <div class="std-heading-row">
+                        <div class="std-heading">
+                            <span class="std-eyebrow">
+                                OUR SIGNATURE SERVICES
+                            </span>
+
+                            <h2 id="std-services-title">
+                                The Right Support.<br>
+                                A More Comfortable Day.
+                            </h2>
+                        </div>
+
+                        <a href="services.html" class="std-text-link">
+                            View All Services
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="std-services-grid">
+
+                        <article class="std-featured-service">
+                            <div class="std-featured-service-image">
+                                <img src="Images/indexpage22.jpeg" alt="Caregiver helping an older adult" loading="lazy"
+                                    width="800" height="600">
+                            </div>
+
+                            <div class="std-featured-service-content">
+                                <span class="std-small-label">
+                                    EVERYDAY SUPPORT
+                                </span>
+
+                                <h3>Patient Care Support</h3>
+
+                                <p>
+                                    Explore assistance with personal routines,
+                                    hygiene, mobility, and everyday comfort at home.
+                                </p>
+
+                                <a href="services.html" class="std-text-link">
+                                    Explore Patient Care
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <div class="std-service-stack">
+
+                            <article class="std-service-card">
+                                <span class="std-icon">
+                                    <i class="fa-solid fa-person-cane" aria-hidden="true"></i>
+                                </span>
+
+                                <div>
+                                    <h3>Elder Care</h3>
+
+                                    <p>
+                                        Companionship and assistance with
+                                        everyday routines for older adults.
+                                    </p>
+
+                                    <a href="services.html" class="std-text-link">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="std-service-card">
+                                <span class="std-icon">
+                                    <i class="fa-solid fa-bed-pulse" aria-hidden="true"></i>
+                                </span>
+
+                                <div>
+                                    <h3>Post-Surgery Support</h3>
+
+                                    <p>
+                                        Explore daily-living assistance and
+                                        recovery-related support options.
+                                    </p>
+
+                                    <a href="services.html" class="std-text-link">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="std-service-card">
+                                <span class="std-icon">
+                                    <i class="fa-solid fa-user-nurse" aria-hidden="true"></i>
+                                </span>
+
+                                <div>
+                                    <h3>Nursing Visits</h3>
+
+                                    <p>
+                                        Learn about scheduled visits for nursing
+                                        requirements, subject to appropriate review.
+                                    </p>
+
+                                    <a href="services.html" class="std-text-link">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================
+         3. ABOUT MERIDIAN
+    ========================================= -->
+            <section class="std-section std-soft-section" aria-labelledby="std-about-title">
+                <div class="std-container std-about-layout">
+
+                    <div class="std-about-collage">
+                        <img class="std-about-main-image" src="Images/indexpage23.jpeg"
+                            alt="Caregiver offering support at home" loading="lazy" width="600" height="720">
+
+                        <img class="std-about-small-image" src="Images/indexpage24.jpeg"
+                            alt="Care team working together" loading="lazy" width="440" height="340">
+
+                        <div class="std-about-caption">
+                            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+
+                            A more personal approach
+                        </div>
+                    </div>
+
+                    <div class="std-about-content">
+                        <span class="std-eyebrow">ABOUT MERIDIAN</span>
+
+                        <h2 id="std-about-title">
+                            More Than Assistance.<br>
+                            A More Personal Approach.
+                        </h2>
+
+                        <p>
+                            Meridian Home Nursing is a demonstration website
+                            presenting home-care information in a clear,
+                            thoughtful, and accessible way.
+                        </p>
+
+                        <p>
+                            Explore services and learn about support
+                            options for patients and families.
+                        </p>
+
+                        <ul class="std-check-list">
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>
+                                    Respect for individual routines and dignity
+                                </span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>
+                                    Clear information for patients and families
+                                </span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>
+                                    Care options organized around everyday needs
+                                </span>
+                            </li>
+                        </ul>
+
+                        <a href="about.html" class="std-btn">
+                            Discover Our Approach
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ========================================
+         4. CARE BY NEED
+    ========================================= -->
+            <section class="std-section" aria-labelledby="std-needs-title">
+                <div class="std-container">
+
+                    <div class="std-heading std-heading-center">
+                        <span class="std-eyebrow">
+                            CARE AROUND YOUR NEEDS
+                        </span>
+
+                        <h2 id="std-needs-title">
+                            Different Needs. Thoughtful Options.
+                        </h2>
+
+                        <p>
+                            Start with the kind of support you are looking for
+                            and explore the services that may fit.
+                        </p>
+                    </div>
+
+                    <div class="std-needs-grid">
+
+                        <article class="std-need-card">
+                            <div class="std-need-image">
+                                <img src="Images/indexpage25.jpeg" alt="Older adult receiving daily assistance"
+                                    loading="lazy" width="600" height="440">
+
+                                <span class="std-need-number">01</span>
+                            </div>
+
+                            <div class="std-need-content">
+                                <h3>Everyday Support</h3>
+
+                                <p>
+                                    For families exploring companionship,
+                                    personal routines, and daily-living assistance.
+                                </p>
+
+                                <a href="services.html" class="std-text-link">
+                                    Explore Daily Care
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="std-need-card">
+                            <div class="std-need-image">
+                                <img src="Images/indexpage26.jpeg" alt="Patient receiving supportive care at home"
+                                    loading="lazy" width="600" height="440">
+
+                                <span class="std-need-number">02</span>
+                            </div>
+
+                            <div class="std-need-content">
+                                <h3>Recovery at Home</h3>
+
+                                <p>
+                                    For those exploring assistance with everyday
+                                    activities after a hospital stay or surgery.
+                                </p>
+
+                                <a href="services.html" class="std-text-link">
+                                    Explore Recovery Support
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="std-need-card">
+                            <div class="std-need-image">
+                                <img src="Images/indexpageimage2.jpeg" alt="Nurse assisting a patient" loading="lazy"
+                                    width="600" height="440">
+
+                                <span class="std-need-number">03</span>
+                            </div>
+
+                            <div class="std-need-content">
+                                <h3>Scheduled Nursing Visits</h3>
+
+                                <p>
+                                    For agreed nursing requirements that need
+                                    appropriate clinical review and instructions.
+                                </p>
+
+                                <a href="services.html" class="std-text-link">
+                                    Explore Nursing Visits
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================
+         5. CARE JOURNEY
+    ========================================= -->
+            <section class="std-section std-soft-section" aria-labelledby="std-journey-title">
+                <div class="std-container">
+
+                    <div class="std-heading std-heading-center">
+                        <span class="std-eyebrow">A SIMPLE START</span>
+
+                        <h2 id="std-journey-title">
+                            A Clear Path to Understanding Care
+                        </h2>
+
+                        <p>
+                            An illustrative care journey, from exploring
+                            requirements to discussing suitable support.
+                        </p>
+                    </div>
+
+                    <ol class="std-timeline">
+
+                        <li class="std-timeline-step">
+                            <span class="std-timeline-number">01</span>
+
+                            <h3>Share Requirements</h3>
+
+                            <p>
+                                Identify the type of assistance, preferred
+                                schedule, and everyday support needed.
+                            </p>
+                        </li>
+
+                        <li class="std-timeline-step">
+                            <span class="std-timeline-number">02</span>
+
+                            <h3>Explore Options</h3>
+
+                            <p>
+                                Review the service information and
+                                explore relevant care categories.
+                            </p>
+                        </li>
+
+                        <li class="std-timeline-step">
+                            <span class="std-timeline-number">03</span>
+
+                            <h3>Discuss Support</h3>
+
+                            <p>
+                                A live agency would review requirements
+                                and confirm suitable arrangements.
+                            </p>
+                        </li>
+
+                        <li class="std-timeline-step">
+                            <span class="std-timeline-number">04</span>
+
+                            <h3>Plan Next Steps</h3>
+
+                            <p>
+                                Availability, responsibilities, and terms
+                                would be agreed before care begins.
+                            </p>
+                        </li>
+
+                    </ol>
+
+                    <p class="std-section-note">
+                        Project demonstration only. The Help Form does not send
+                        enquiries, confirm availability, or create bookings.
+                    </p>
+
+                </div>
+            </section>
+
+            <!-- ========================================
+         6. CARE COMMITMENTS
+         Previous pricing section removed.
+    ========================================= -->
+            <section class="std-section std-commitments" aria-labelledby="std-commitments-title">
+                <div class="std-container std-commitments-layout">
+
+                    <div class="std-commitments-intro">
+                        <span class="std-eyebrow">WHAT MATTERS MOST</span>
+
+                        <h2 id="std-commitments-title">
+                            Small Details.<br>
+                            A More Thoughtful<br>
+                            Care Experience.
+                        </h2>
+
+                        <p>
+                            These principles shape the care approach presented
+                            throughout this demonstration website.
+                        </p>
+
+                        <a href="about.html" class="std-btn std-btn-light">
+                            About Our Approach
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="std-commitment-grid">
+
+                        <article class="std-commitment-card">
+                            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+
+                            <h3>Respect &amp; Dignity</h3>
+
+                            <p>
+                                A considerate approach to personal preferences,
+                                privacy, and everyday comfort.
+                            </p>
+                        </article>
+
+                        <article class="std-commitment-card">
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>
+
+                            <h3>Clear Communication</h3>
+
+                            <p>
+                                Information that helps families understand
+                                care options and responsibilities.
+                            </p>
+                        </article>
+
+                        <article class="std-commitment-card">
+                            <i class="fa-solid fa-house" aria-hidden="true"></i>
+
+                            <h3>Personal Routines</h3>
+
+                            <p>
+                                Support considered around familiar surroundings
+                                and individual daily habits.
+                            </p>
+                        </article>
+
+                        <article class="std-commitment-card">
+                            <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+
+                            <h3>Transparent Information</h3>
+
+                            <p>
+                                Clear service descriptions and visible
+                                limitations help set understandable expectations.
+                            </p>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================
+         7. FAQS AND CONTACT PANEL
+    ========================================= -->
+            <section class="std-section" aria-labelledby="std-faq-title">
+                <div class="std-container std-faq-layout">
+
+                    <div>
+                        <div class="std-heading">
+                            <span class="std-eyebrow">HELPFUL ANSWERS</span>
+
+                            <h2 id="std-faq-title">
+                                A Little Clarity<br>
+                                Before You Begin.
+                            </h2>
+
+                            <p>
+                                Find answers about the services and
+                                information shown on this website.
+                            </p>
+                        </div>
+
+                        <div class="std-faq-list">
+
+                            <details class="std-faq">
+                                <summary>
+                                    What services can I explore?
+                                </summary>
+
+                                <p>
+                                    The website presents elder care, patient-care
+                                    support, post-surgery assistance, and scheduled
+                                    nursing visits. Visit the Services page for details.
+                                </p>
+                            </details>
+
+                            <details class="std-faq">
+                                <summary>
+                                    Is this a live home-care agency website?
+                                </summary>
+
+                                <p>
+                                    No. Meridian is a demonstration project.
+                                    This website does not arrange caregivers,
+                                    accept payments, or confirm care services.
+                                </p>
+                            </details>
+
+                            <details class="std-faq">
+                                <summary>
+                                    Can care duration be personalized?
+                                </summary>
+
+                                <p>
+                                    A real agency would need to review requirements,
+                                    availability, and terms before confirming
+                                    a personalized arrangement.
+                                </p>
+                            </details>
+
+                            <details class="std-faq">
+                                <summary>
+                                    Does the Help Form create a booking?
+                                </summary>
+
+                                <p>
+                                    No. The current Help Form is a demonstration.
+                                    Messages are not sent or saved, and no booking
+                                    or reply is provided.
+                                </p>
+                            </details>
+
+                        </div>
+                    </div>
+
+                    <aside class="std-contact-panel">
+                        <span class="std-contact-icon">
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                        </span>
+
+                        <span class="std-eyebrow">YOUR NEXT STEP</span>
+
+                        <h2>
+                            Let’s Find a Starting Point for Your Care.
+                        </h2>
+
+                        <p>
+                            Explore the Help Form or review the service
+                            information to learn more about the options
+                            on this website.
+                        </p>
+
+                        <div class="std-contact-actions">
+                            <a href="contact.html#help-section" class="std-btn">
+                                Get Help
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="services.html" class="std-btn std-btn-outline">
+                                View Services
+                            </a>
+                        </div>
+
+                        <p class="std-contact-note">
+                            Demo only. This website does not provide
+                            emergency assistance or medical advice.
+                        </p>
+                    </aside>
+
+                </div>
+            </section>
+
+            <!-- ========================================
+         8. NEW BOTTOM CTA — ASYMMETRIC PANEL
+    ========================================= -->
+            <section class="std-bottom-cta" aria-labelledby="std-bottom-cta-title">
+                <div class="std-container">
+                    <div class="std-cta-panel">
+
+                        <div class="std-cta-copy">
+                            <span class="std-cta-eyebrow">
+                                A THOUGHTFUL NEXT STEP
+                            </span>
+
+                            <h2 id="std-bottom-cta-title">
+                                Every Care Journey<br>
+                                Starts with<br>
+                                <span>Understanding.</span>
+                            </h2>
+
+                            <p>
+                                Take a closer look at care options for
+                                everyday support, recovery, and nursing
+                                visits—all in one place.
+                            </p>
+
+                            <div class="std-cta-topics">
+                                <span>Everyday support</span>
+                                <span>Recovery at home</span>
+                                <span>Nursing visits</span>
+                            </div>
+                        </div>
+
+                        <div class="std-cta-action-panel">
+                            <span class="std-cta-icon">
+                                <i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
+                            </span>
+
+                            <h3>Find Your Starting Point</h3>
+
+                            <p>
+                                Explore the services or visit the demonstration
+                                Help Form.
+                            </p>
+
+                            <div class="std-cta-actions">
+                                <a href="services.html" class="std-btn std-cta-primary">
+                                    Explore Services
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                </a>
+
+                                <a href="contact.html#help-section" class="std-btn std-cta-secondary">
+                                    Visit Help Form
+                                </a>
+                            </div>
+
+                            <small class="std-cta-note">
+                                Portfolio demonstration only.<br>
+                                No enquiries are sent or bookings created.
+                            </small>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-container">
+
+                <!-- Agency information -->
+                <div class="footer-about">
+                    <a href="index.html" class="brand">
+                        <span class="brand-icon">
+                            <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                        </span>
+
+                        <span class="brand-text">
+                            <span class="brand-name">Meridian Home Nursing</span>
+                            <span class="brand-subtitle">
+                                Home Nursing and Patient Care
+                            </span>
+                        </span>
+                    </a>
+
+                    <p class="footer-description">
+                        Caring support in the comfort of home. Explore our home
+                        nursing, elder care, and patient care services for your
+                        loved ones.
+                    </p>
+
+                    <!-- Demo placeholders: add real profile URLs to enable -->
+                    <div class="footer-socials" aria-label="Social media">
+                        <a class="footer-social-link" role="link" aria-disabled="true"
+                            aria-label="Facebook — profile link coming soon" title="Facebook — coming soon">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="footer-social-link" role="link" aria-disabled="true"
+                            aria-label="Instagram — profile link coming soon" title="Instagram — coming soon">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="footer-social-link" role="link" aria-disabled="true"
+                            aria-label="LinkedIn — profile link coming soon" title="LinkedIn — coming soon">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="footer-social-link" role="link" aria-disabled="true"
+                            aria-label="YouTube — profile link coming soon" title="YouTube — coming soon">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <nav class="footer-column" aria-label="Footer navigation">
+                    <h2 class="footer-heading">Company</h2>
+
+                    <ul class="footer-links">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+
+                        <li>
+                            <a href="pricing.html">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Services -->
+                <nav class="footer-column" aria-label="Care services">
+                    <h2 class="footer-heading">Our Services</h2>
+
+                    <ul class="footer-links">
+                        <li>
+                            <a href="services.html">Post-Surgery Care</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">Elder Care</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Patient Care</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">Injections &amp; Dressing</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">Patient Care Support</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Resources -->
+                <nav class="footer-column" aria-label="Care services">
+                    <h2 class="footer-heading">Resources</h2>
+
+                    <ul class="footer-links">
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Tutorials</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">FAQs</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Support</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div>
+                <div class="footer-bottom">
+                    <div>&copy; GreenFlow. All rights Reserved.</div>
+                    <div class="footer-bottom-nav">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Settings</a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="header.js"></script>
+        
+
+
+    </body>
+
+</html>

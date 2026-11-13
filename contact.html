@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page nursing project </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Left: Agency branding -->
+            <a href="index.html" class="brand">
+                <span class="brand-icon">
+                    <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                </span>
+
+                <span class="brand-text">
+                    <span class="brand-name">Meridian Home Nursing</span>
+                    <span class="brand-subtitle">
+                        Home Nursing and Patient Care
+                    </span>
+                </span>
+            </a>
+
+            <!-- Middle: Navigation -->
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul class="nav-list">
+
+                    <li class="home-dropdown">
+                        <button type="button" class="home-toggle" id="homeToggle" aria-expanded="false"
+                            aria-controls="homeDropdown">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+
+                        <ul class="dropdown-list" id="homeDropdown" hidden>
+                            <li>
+                                <a href="index.html">Classic</a>
+                            </li>
+
+                            <li>
+                                <a href="home-standard.html">Standard</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Mobile booking link -->
+                <a href="bookserviceform.html" class="mobile-book">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    Book Service
+                </a>
+            </nav>
+
+            <!-- Right: Header controls -->
+            <div class="header-actions">
+
+                <button type="button" class="icon-button" id="rtlToggle" aria-label="Switch to right-to-left layout"
+                    aria-pressed="false" title="Switch to right-to-left layout">
+                    <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="icon-button" id="darkModeToggle" aria-label="Enable dark mode"
+                    aria-pressed="false" title="Enable dark mode">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="bookserviceform.html" class="book-button">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    <span>Book Service</span>
+                </a>
+
+                <button type="button" class="icon-button menu-toggle" id="menuToggle" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="mainNav">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+    <main class="contact-page">
+
+        <!-- Contact Hero Banner -->
+        <section class="contact-hero-banner">
+            <div class="contact-hero-banner-overlay">
+                <div class="contact-hero-banner-container">
+
+                    <div class="contact-hero-banner-content">
+                        <span class="contact-hero-eyebrow">
+                            HELP &amp; SUPPORT
+                        </span>
+
+                        <h1>
+                            Questions About Care?<br>
+                            <span>We’re Here to Help.</span>
+                        </h1>
+
+                        <p>
+                            Share a general question about services, sample pricing,
+                            or using this website through our simple Help Form.
+                        </p>
+
+                        <div class="contact-hero-actions">
+                            <a href="#care-enquiry" class="contact-hero-button">
+                                Get Help
+                                <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. Contact Hero -->
+        <section class="contact-section contact-hero">
+            <div class="contact-container contact-hero-layout">
+
+                <div class="contact-hero-content">
+                    <span class="contact-eyebrow">CARE ENQUIRIES</span>
+
+                    <h1>
+                        Let’s Discuss<br>
+                        <span>Your Care Needs.</span>
+                    </h1>
+
+                    <p>
+                        Explore care options for yourself or a loved one.
+                        Share the support you are looking for through
+                        our care enquiry form.
+                    </p>
+
+                    <a href="#care-enquiry" class="contact-button">
+                        Send a Care Enquiry
+                        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="contact-hero-panel">
+                    <span class="contact-hero-icon">
+                        <i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
+                    </span>
+
+                    <h2>A thoughtful start to care</h2>
+
+                    <p>
+                        Begin with a brief enquiry about the type of
+                        assistance and schedule you have in mind.
+                    </p>
+
+                    <div class="contact-hero-note">
+                        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+
+                        <span>
+                            This project form is a demonstration,
+                            not a live booking service.
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 2. Care Enquiry Form -->
+        <section class="contact-section" id="care-enquiry">
+            <div class="contact-container contact-enquiry-layout">
+
+                <!-- Supporting information -->
+                <aside class="contact-enquiry-intro">
+                    <span class="contact-eyebrow">WE’RE HERE TO GUIDE YOU</span>
+
+                    <h2>Tell Us What Support You Are Exploring</h2>
+
+                    <p>
+                        You do not need to know the exact care package
+                        before making an enquiry. Choose “Not Sure” if
+                        you would like help exploring the available options.
+                    </p>
+
+                    <ul class="contact-help-list">
+                        <li>
+                            <span class="contact-help-icon">
+                                <i class="fa-solid fa-hand-holding-medical" aria-hidden="true"></i>
+                            </span>
+
+                            <div>
+                                <h3>Explore Care Options</h3>
+                                <p>
+                                    Enquire about the services shown
+                                    on our website.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="contact-help-icon">
+                                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                            </span>
+
+                            <div>
+                                <h3>Discuss Your Schedule</h3>
+                                <p>
+                                    Indicate a preferred start date
+                                    and care duration.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="contact-help-icon">
+                                <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+                            </span>
+
+                            <div>
+                                <h3>Request a Care Quote</h3>
+                                <p>
+                                    Describe the arrangement you
+                                    would like to explore.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="contact-information-note">
+                        <h3>Before You Begin</h3>
+
+                        <p>
+                            Keep your message brief. Please do not include
+                            medical records, identification numbers,
+                            or sensitive health information.
+                        </p>
+
+                        <p>
+                            This form is not monitored for urgent requests.
+                            Do not use it to request emergency assistance.
+                        </p>
+                    </div>
+                </aside>
+
+                <!-- Simple Help Form -->
+                <div class="contact-form-card">
+                    <h2>How Can We Help You?</h2>
+
+                    <p class="contact-form-intro">
+                        Select a topic and write your question below.
+                        All fields are required.
+                    </p>
+
+                    <form id="helpForm">
+
+                        <div class="contact-form-grid">
+
+                            <!-- Full name -->
+                            <div class="contact-field contact-field-full">
+                                <label for="helpName">Full Name</label>
+
+                                <input type="text" id="helpName" name="fullName" autocomplete="name"
+                                    placeholder="Enter your full name" maxlength="100" required>
+                            </div>
+
+                            <!-- Help topic -->
+                            <div class="contact-field contact-field-full">
+                                <label for="helpTopic">Help Topic</label>
+
+                                <select id="helpTopic" name="helpTopic" required>
+                                    <option value="" disabled selected>
+                                        Select a topic
+                                    </option>
+
+                                    <option value="general">
+                                        General Question
+                                    </option>
+
+                                    <option value="services">
+                                        Services Information
+                                    </option>
+
+                                    <option value="pricing">
+                                        Pricing Information
+                                    </option>
+
+                                    <option value="website">
+                                        Website Help
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+                                </select>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="contact-field contact-field-full">
+                                <label for="helpMessage">Your Message</label>
+
+                                <textarea id="helpMessage" name="message" rows="5" maxlength="1000"
+                                    placeholder="Tell us how we can help you." aria-describedby="helpMessageHint"
+                                    required></textarea>
+
+                                <p class="contact-field-help" id="helpMessageHint">
+                                    Please do not include private medical information.
+                                    Maximum 1,000 characters.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="contact-demo-notice">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+
+                            <p>
+                                This is a demonstration form. Messages are not sent
+                                or saved, and no response is provided.
+                            </p>
+                        </div>
+
+                        <button type="submit" class="contact-button contact-submit">
+                            Submit
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+
+                        <p class="contact-form-status" id="helpFormStatus" role="status" aria-live="polite"
+                            aria-atomic="true"></p>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. What Happens Next -->
+        <section class="contact-section contact-soft-section">
+            <div class="contact-container">
+
+                <div class="contact-section-heading">
+                    <span class="contact-eyebrow">THE CARE ENQUIRY JOURNEY</span>
+
+                    <h2>What Happens Next?</h2>
+
+                    <p>
+                        A proposed process for a future live enquiry service.
+                        These steps are not performed by this demo form.
+                    </p>
+                </div>
+
+                <ol class="contact-steps">
+
+                    <li class="contact-step">
+                        <span class="contact-step-number" aria-hidden="true">
+                            01
+                        </span>
+
+                        <h3>Share Requirements</h3>
+
+                        <p>
+                            Describe the care service and schedule
+                            you are looking for.
+                        </p>
+                    </li>
+
+                    <li class="contact-step">
+                        <span class="contact-step-number" aria-hidden="true">
+                            02
+                        </span>
+
+                        <h3>Review the Request</h3>
+
+                        <p>
+                            The requested support would be reviewed
+                            before an arrangement is proposed.
+                        </p>
+                    </li>
+
+                    <li class="contact-step">
+                        <span class="contact-step-number" aria-hidden="true">
+                            03
+                        </span>
+
+                        <h3>Discuss a Plan</h3>
+
+                        <p>
+                            Service scope, availability, and pricing
+                            would be agreed separately.
+                        </p>
+                    </li>
+
+                    <li class="contact-step">
+                        <span class="contact-step-number" aria-hidden="true">
+                            04
+                        </span>
+
+                        <h3>Confirm the Arrangement</h3>
+
+                        <p>
+                            Care would begin only after the booking
+                            and schedule are confirmed.
+                        </p>
+                    </li>
+
+                </ol>
+
+            </div>
+        </section>
+
+        <!-- 4. Contact FAQs -->
+        <section class="contact-section">
+            <div class="contact-container contact-faq-container">
+
+                <div class="contact-section-heading">
+                    <span class="contact-eyebrow">COMMON QUESTIONS</span>
+                    <h2>Before You Make an Enquiry</h2>
+
+                    <p>
+                        A few details about using this project’s enquiry form.
+                    </p>
+                </div>
+
+                <div class="contact-faq-list">
+
+                    <details class="contact-faq">
+                        <summary>
+                            What if I am unsure which service to choose?
+                        </summary>
+
+                        <p>
+                            Select “Not Sure” in the Care Service field
+                            and briefly describe the type of assistance
+                            you are exploring.
+                        </p>
+                    </details>
+
+                    <details class="contact-faq">
+                        <summary>
+                            Can I enquire for a family member?
+                        </summary>
+
+                        <p>
+                            Yes. Choose Parent, Relative, or Other in the
+                            Enquiring For field. Avoid sharing their
+                            sensitive personal or medical information.
+                        </p>
+                    </details>
+
+                    <details class="contact-faq">
+                        <summary>
+                            Does submitting this form confirm a booking?
+                        </summary>
+
+                        <p>
+                            No. This is a demonstration form. It does not
+                            send an enquiry, reserve a caregiver, or
+                            confirm a service.
+                        </p>
+                    </details>
+
+                    <details class="contact-faq">
+                        <summary>
+                            Should I upload medical documents?
+                        </summary>
+
+                        <p>
+                            No. This form does not accept document uploads.
+                            Please do not paste medical records into
+                            the message field.
+                        </p>
+                    </details>
+
+                    <details class="contact-faq">
+                        <summary>
+                            How will I receive a response?
+                        </summary>
+
+                        <p>
+                            This demonstration does not collect a reply
+                            method or send responses. A live enquiry service
+                            would require a suitable response channel
+                            and backend integration.
+                        </p>
+                    </details>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- 4. Hyderabad Map -->
+        <section class="contact-section" id="background">
+            <div class="contact-container">
+
+                <div class="contact-section-heading">
+                    <span class="contact-eyebrow">LOCATION PREVIEW</span>
+
+                    <p>
+                        A city map included for this project demonstration.
+                    </p>
+                </div>
+
+                <div class="contact-map">
+                    <iframe title="Map showing Hyderabad, India — sample project location"
+                        src="https://maps.google.com/maps?q=Hyderabad%2C%20India&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                        width="1200" height="420" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen></iframe>
+                </div>
+
+                <p class="contact-map-note">
+                    Sample location only. This map does not represent
+                    a confirmed Meridian Home Nursing office or service area.
+                    Map content is provided by Google Maps.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- 5. Contact CTA -->
+        <section class="contact-section contact-cta-section">
+            <div class="contact-container contact-cta-layout">
+
+                <div>
+                    <span class="contact-eyebrow">EXPLORE YOUR OPTIONS</span>
+
+                    <h2>Still Exploring the Right Care?</h2>
+
+                    <p>
+                        Read about the available service categories
+                        before choosing your next step.
+                    </p>
+                </div>
+
+                <a href="services.html" class="contact-button">
+                    View Care Services
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Agency information -->
+            <div class="footer-about">
+                <a href="index.html" class="brand">
+                    <span class="brand-icon">
+                        <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                    </span>
+
+                    <span class="brand-text">
+                        <span class="brand-name">Meridian Home Nursing</span>
+                        <span class="brand-subtitle">
+                            Home Nursing and Patient Care
+                        </span>
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    Caring support in the comfort of home. Explore our home
+                    nursing, elder care, and patient care services for your
+                    loved ones.
+                </p>
+
+                <!-- Demo placeholders: add real profile URLs to enable -->
+                <div class="footer-socials" aria-label="Social media">
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="Facebook — profile link coming soon" title="Facebook — coming soon">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="Instagram — profile link coming soon" title="Instagram — coming soon">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="LinkedIn — profile link coming soon" title="LinkedIn — coming soon">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="YouTube — profile link coming soon" title="YouTube — coming soon">
+                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Company -->
+            <nav class="footer-column" aria-label="Footer navigation">
+                <h2 class="footer-heading">Company</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Services -->
+            <nav class="footer-column" aria-label="Care services">
+                <h2 class="footer-heading">Our Services</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="services.html">Post-Surgery Care</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Elder Care</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Patient Care</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Injections &amp; Dressing</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Patient Care Support</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Resources -->
+            <nav class="footer-column" aria-label="Care services">
+                <h2 class="footer-heading">Resources</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Tutorials</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Support</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div>
+            <div class="footer-bottom">
+                <div>&copy; GreenFlow. All rights Reserved.</div>
+                <div class="footer-bottom-nav">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="header.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Care &amp; Nursing Insights | Meridian Home Nursing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="blogreadmore.css">
+    
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Left: Agency branding -->
+            <a href="index.html" class="brand">
+                <span class="brand-icon">
+                    <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                </span>
+
+                <span class="brand-text">
+                    <span class="brand-name">Meridian Home Nursing</span>
+                    <span class="brand-subtitle">
+                        Home Nursing and Patient Care
+                    </span>
+                </span>
+            </a>
+
+            <!-- Middle: Navigation -->
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul class="nav-list">
+
+                    <li class="home-dropdown">
+                        <button type="button" class="home-toggle" id="homeToggle" aria-expanded="false"
+                            aria-controls="homeDropdown">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+
+                        <ul class="dropdown-list" id="homeDropdown" hidden>
+                            <li>
+                                <a href="index.html">Classic</a>
+                            </li>
+
+                            <li>
+                                <a href="home-standard.html">Standard</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Mobile booking link -->
+                <a href="bookserviceform.html" class="mobile-book">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    Book Service
+                </a>
+            </nav>
+
+            <!-- Right: Header controls -->
+            <div class="header-actions">
+
+                <button type="button" class="icon-button" id="rtlToggle" aria-label="Switch to right-to-left layout"
+                    aria-pressed="false" title="Switch to right-to-left layout">
+                    <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="icon-button" id="darkModeToggle" aria-label="Enable dark mode"
+                    aria-pressed="false" title="Enable dark mode">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="bookserviceform.html" class="book-button">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    <span>Book Service</span>
+                </a>
+
+                <button type="button" class="icon-button menu-toggle" id="menuToggle" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="mainNav">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================
+         MAIN ALL-IN-ONE BLOG DETAILS
+    ========================================= -->
+    <main class="blog-details-page">
+
+        <!-- ========================================
+     NEW TOP SECTION: IMAGE LEFT / TEXT RIGHT
+========================================= -->
+        <section class="bd-top-feature" aria-labelledby="bd-top-feature-title">
+            <div class="bd-top-feature-container">
+
+                <!-- LEFT: IMAGE -->
+                <div class="bd-top-feature-visual">
+                    <img src="Images/indeximage6.jpeg" alt="Caregiver supporting a patient at home" width="800"
+                        height="640" fetchpriority="high">
+                </div>
+
+                <!-- RIGHT: TEXT AND PRIMARY BUTTON -->
+                <div class="bd-top-feature-content">
+                    <span class="bd-hero-tag">
+                        THOUGHTFUL GUIDANCE FOR FAMILIES
+                    </span>
+
+                    <h2 id="bd-top-feature-title">
+                        A Little Understanding.<br>
+                        <span>A More Thoughtful Approach to Care.</span>
+                    </h2>
+
+                    <p>
+                        Explore articles about preparing for care at home,
+                        respecting personal routines, and discussing support
+                        with the people who matter.
+                    </p>
+
+                    <p class="bd-top-feature-description">
+                        Start with a topic below and take time to understand
+                        the options presented in this demonstration care journal.
+                    </p>
+
+                    <a href="#post-surgery-recovery" class="bd-hero-btn bd-hero-btn-primary">
+                        Start Reading
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- 1. HERO BANNER WITH ACTION BUTTONS -->
+        <section class="bd-hero">
+            <div class="bd-hero-container">
+
+                <span class="bd-hero-tag">CARE JOURNAL &amp; GUIDES</span>
+                <h1>Home Care &amp; <span>Nursing Insights</span></h1>
+                <p>
+                    Explore practical preparation checklists, family guidance, and everyday
+                    care routines designed to support recovering patients and seniors at home.
+                </p>
+
+                <!-- Action Buttons in Hero -->
+                <div class="bd-hero-actions">
+                    <a href="services.html" class="bd-hero-btn bd-hero-btn-primary">
+                        Explore Services
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="pricing.html" class="bd-hero-btn bd-hero-btn-outline">
+                        View Pricing
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. TWO-COLUMN MAIN STREAM + STICKY SIDEBAR -->
+        <div class="bd-main-wrapper">
+            <div class="bd-container">
+
+                <!-- LEFT COLUMN: Scrollable Articles Feed -->
+                <div class="bd-content-stream">
+
+                    <!-- ARTICLE 1 -->
+                    <article class="bd-article" id="post-surgery-recovery">
+                        <div class="bd-article-media">
+                            <img src="Images/blogreadmoreimage1.jpeg" alt="Caregiver assisting patient recovery at home"
+                                width="800" height="450" loading="lazy">
+                        </div>
+                        <div class="bd-article-header">
+                            <span class="bd-badge">Post-Surgery Care</span>
+                            <h2>Post-Surgery Recovery at Home: The Family Preparation Guide</h2>
+                        </div>
+                        <div class="bd-article-body">
+                            <p class="bd-lead">
+                                Returning home after hospital discharge is a relief, but the first two weeks require
+                                thoughtful room preparation. Organizing spaces in advance prevents accidental strain
+                                and supports steady healing.
+                            </p>
+
+                            <h3>Why Early Room Setup Matters</h3>
+                            <p>
+                                Following surgery, patients often experience temporary mobility limits and fatigue.
+                                Setting up the environment ahead of time allows rest without unnecessary physical effort
+                                or risk of domestic falls.
+                            </p>
+
+                            <h3>Essential Home Recovery Steps</h3>
+                            <ul class="bd-list">
+                                <li><strong>Clear walking routes:</strong> Remove low rugs, electrical cables, and
+                                    clutter between the bedroom, bathroom, and kitchen.</li>
+                                <li><strong>Keep essentials at waist height:</strong> Position water bottles, phones,
+                                    eyeglasses, and tissues within easy reach without bending.</li>
+                                <li><strong>Set up a recovery bedside:</strong> Keep clean blankets, elevation pillows,
+                                    and prescribed recovery aids close by.</li>
+                                <li><strong>Maintain a medication schedule:</strong> Keep a clear written timetable
+                                    tracking prescription dosages and times.</li>
+                            </ul>
+
+                            <div class="bd-takeaway">
+                                <h4>Final Takeaway</h4>
+                                <p>
+                                    Small room adjustments before hospital arrival create a calm recovery atmosphere
+                                    where the patient can rest with dignity and peace of mind.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ARTICLE 2 -->
+                    <article class="bd-article" id="elder-care-routines">
+                        <div class="bd-article-media">
+                            <img src="Images/blogreadmoreimage2.jpeg"
+                                alt="Older adult enjoying daily routine with caregiver support" width="800" height="450"
+                                loading="lazy">
+                        </div>
+                        <div class="bd-article-header">
+                            <span class="bd-badge">Elder Care</span>
+                            <h2>Building Everyday Routines Around Senior Preferences</h2>
+                        </div>
+                        <div class="bd-article-body">
+                            <p class="bd-lead">
+                                Dignified elder care is built on respecting longstanding habits, favorite morning
+                                rhythms,
+                                and personal independence rather than enforcing rigid schedules.
+                            </p>
+
+                            <h3>The Value of Predictable Familiarity</h3>
+                            <p>
+                                Predictable routines provide reassuring stability for senior family members. When
+                                morning tea,
+                                walks, and quiet hours take place at familiar times, emotional comfort and cognitive
+                                clarity are reinforced.
+                            </p>
+
+                            <h3>Helpful Routine Practices</h3>
+                            <ul class="bd-list">
+                                <li><strong>Preserve personal morning habits:</strong> Respect their preferred order of
+                                    tea, prayer, meditation, or reading.</li>
+                                <li><strong>Integrate gentle movement:</strong> Encourage daily short walks or seated
+                                    mobility exercises suited to doctor-approved abilities.</li>
+                                <li><strong>Meaningful companionship:</strong> Set aside unhurried time for
+                                    conversations, sharing memories, and hobbies.</li>
+                                <li><strong>Hydration and nutrition reminders:</strong> Offer warm fluids and
+                                    nutrient-dense, easily digestible meals at steady hours.</li>
+                            </ul>
+
+                            <div class="bd-takeaway">
+                                <h4>Final Takeaway</h4>
+                                <p>
+                                    Care that accommodates personal lifestyle preferences preserves autonomy and
+                                    brings genuine warmth to everyday living.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ARTICLE 3 -->
+                    <article class="bd-article" id="nursing-visit-prep">
+                        <div class="bd-article-media">
+                            <img src="Images/blogreadmoreimage3.jpeg" alt="Nurse reviewing medical notes with patient"
+                                width="800" height="450" loading="lazy">
+                        </div>
+                        <div class="bd-article-header">
+                            <span class="bd-badge">Nursing Visits</span>
+                            <h2>Checklist: Preparing for a Scheduled Home Nursing Visit</h2>
+                        </div>
+                        <div class="bd-article-body">
+                            <p class="bd-lead">
+                                Scheduled nursing visits—such as clinical dressing changes, catheter care, or prescribed
+                                injections—proceed smoothly when family members prepare the area ahead of time.
+                            </p>
+
+                            <h3>Clinical Hygiene at Home</h3>
+                            <p>
+                                Home nursing professionals follow strict infection-control standards. Providing an
+                                organized,
+                                well-lit workspace ensures procedures are performed safely and comfortably.
+                            </p>
+
+                            <h3>Visit Preparation Checklist</h3>
+                            <ul class="bd-list">
+                                <li><strong>Clean surface area:</strong> Disinfect a dedicated bedside table or tray for
+                                    sterile dressing packs and instruments.</li>
+                                <li><strong>Adequate lighting:</strong> Ensure good overhead or adjustable task lighting
+                                    is available over the treatment area.</li>
+                                <li><strong>Prescriptions &amp; discharge orders:</strong> Keep official doctor
+                                    instructions and prescription charts ready for verification.</li>
+                                <li><strong>Hand hygiene access:</strong> Provide easy access to clean handwashing
+                                    facilities, soap, and clean towels.</li>
+                            </ul>
+
+                            <div class="bd-takeaway">
+                                <h4>Final Takeaway</h4>
+                                <p>
+                                    Preparing the care setting in advance saves time, minimizes patient discomfort, and
+                                    allows the nurse to focus on precise clinical care.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ARTICLE 4 -->
+                    <article class="bd-article" id="personal-vs-nursing">
+                        <div class="bd-article-media">
+                            <img src="Images/blogreadmoreimage4.jpeg"
+                                alt="Caregiver providing personal daily living support" width="800" height="450"
+                                loading="lazy">
+                        </div>
+                        <div class="bd-article-header">
+                            <span class="bd-badge">Patient Care</span>
+                            <h2>Understanding the Difference: Personal Care vs. Clinical Nursing</h2>
+                        </div>
+                        <div class="bd-article-body">
+                            <p class="bd-lead">
+                                Families exploring home support frequently ask whether their loved one requires a
+                                qualified
+                                nurse or a trained personal care attendant. Understanding this distinction clarifies
+                                care planning.
+                            </p>
+
+                            <h3>Comparing the Two Levels of Care</h3>
+                            <p>
+                                Personal care attendants assist with non-clinical daily living activities, whereas
+                                registered
+                                home nurses conduct physician-prescribed clinical interventions.
+                            </p>
+
+                            <h3>Scope of Responsibilities</h3>
+                            <ul class="bd-list">
+                                <li><strong>Personal Care Attendant:</strong> Assistance with bathing, personal hygiene,
+                                    grooming, bed transfers, mobility, and meal feeding.</li>
+                                <li><strong>Clinical Home Nurse:</strong> Post-surgical wound care, complex dressings,
+                                    injections, IV therapy, catheter management, and vital monitoring.</li>
+                                <li><strong>Combined approach:</strong> Many recovering patients benefit from an
+                                    attendant for daily support paired with periodic nursing visits.</li>
+                            </ul>
+
+                            <div class="bd-takeaway">
+                                <h4>Final Takeaway</h4>
+                                <p>
+                                    Choosing the right care level ensures patient safety and comfort while keeping care
+                                    arrangements sensible.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ARTICLE 5 -->
+                    <article class="bd-article" id="family-care-sharing">
+                        <div class="bd-article-media">
+                            <img src="Images/blogreadmoreimage5.jpeg"
+                                alt="Family sitting together discussing care schedules" width="800" height="450"
+                                loading="lazy">
+                        </div>
+                        <div class="bd-article-header">
+                            <span class="bd-badge">Family Support</span>
+                            <h2>Sharing Caregiving Responsibilities Without Family Burnout</h2>
+                        </div>
+                        <div class="bd-article-body">
+                            <p class="bd-lead">
+                                Supporting an ailing loved one can bring families together, but it can also lead to
+                                exhaustion
+                                if responsibilities fall solely on one primary caregiver.
+                            </p>
+
+                            <h3>Distributing the Care Load</h3>
+                            <p>
+                                Sustainable caregiving requires transparent communication, shared responsibilities, and
+                                structured external help when needed.
+                            </p>
+
+                            <h3>Actionable Family Strategies</h3>
+                            <ul class="bd-list">
+                                <li><strong>Divide tasks by capability:</strong> Assign physical visits, grocery runs,
+                                    medical appointments, and paperwork across relatives.</li>
+                                <li><strong>Shared communication channel:</strong> Use a single messaging group to share
+                                    daily vitals, updates, and doctor notes.</li>
+                                <li><strong>Scheduled respite:</strong> Give primary family caregivers scheduled time
+                                    off to rest and recharge.</li>
+                            </ul>
+
+                            <div class="bd-takeaway">
+                                <h4>Final Takeaway</h4>
+                                <p>
+                                    A balanced routine protects caregiver well-being and ensures higher quality of care
+                                    for the patient.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ARTICLE 6 -->
+                    <article class="bd-article" id="first-care-discussion">
+                        <div class="bd-article-media">
+                            <img src="Images/blogreadmoreimage6.jpeg" alt="Family reviewing a care checklist at home"
+                                width="800" height="450" loading="lazy">
+                        </div>
+                        <div class="bd-article-header">
+                            <span class="bd-badge">Care Planning</span>
+                            <h2>How to Have the First Home Care Conversation</h2>
+                        </div>
+                        <div class="bd-article-body">
+                            <p class="bd-lead">
+                                Discussing outside care with an aging parent or recovering spouse can feel sensitive.
+                                Approaching the topic with empathy and collaboration builds trust.
+                            </p>
+
+                            <h3>Framing Support as Independence</h3>
+                            <p>
+                                Home care is not a loss of independence; it is a practical tool that allows individuals
+                                to stay safely and comfortably in their familiar home environment.
+                            </p>
+
+                            <h3>Helpful Conversation Approaches</h3>
+                            <ul class="bd-list">
+                                <li><strong>Focus on tiring tasks:</strong> Start discussions around physically
+                                    demanding tasks like laundry, meal prep, or bathroom safety.</li>
+                                <li><strong>Involve the person in decisions:</strong> Ask for their preferences
+                                    regarding schedule, caregiver gender, and daily routines.</li>
+                                <li><strong>Suggest a trial period:</strong> Propose trying care on a short temporary
+                                    basis rather than presenting it as permanent.</li>
+                            </ul>
+
+                            <div class="bd-takeaway">
+                                <h4>Final Takeaway</h4>
+                                <p>
+                                    Collaborative conversations preserve dignity and lead to cooperative care
+                                    arrangements for the whole family.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- RIGHT COLUMN: Sticky Sidebar -->
+                <aside class="bd-sidebar" aria-label="Table of contents and care enquiry">
+                    <div class="bd-sidebar-sticky">
+
+                        <!-- Contents Widget with Dot Indicators -->
+                        <div class="bd-widget bd-contents-widget">
+                            <h3 class="bd-widget-title">Contents</h3>
+                            <ul class="bd-toc-list" id="bdTocList">
+                                <li>
+                                    <a href="#post-surgery-recovery" class="bd-toc-link is-active">
+                                        <span class="bd-dot" aria-hidden="true"></span>
+                                        <span>Post-Surgery Recovery</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#elder-care-routines" class="bd-toc-link">
+                                        <span class="bd-dot" aria-hidden="true"></span>
+                                        <span>Elder Care Routines</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#nursing-visit-prep" class="bd-toc-link">
+                                        <span class="bd-dot" aria-hidden="true"></span>
+                                        <span>Nursing Visit Checklist</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#personal-vs-nursing" class="bd-toc-link">
+                                        <span class="bd-dot" aria-hidden="true"></span>
+                                        <span>Personal vs. Nursing Care</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#family-care-sharing" class="bd-toc-link">
+                                        <span class="bd-dot" aria-hidden="true"></span>
+                                        <span>Family Care Sharing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#first-care-discussion" class="bd-toc-link">
+                                        <span class="bd-dot" aria-hidden="true"></span>
+                                        <span>First Care Discussion</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Sidebar CTA Widget -->
+                        <div class="bd-widget bd-promo-widget">
+                            <span class="bd-promo-badge">Dedicated Assistance</span>
+                            <h4>Need Home Care Support?</h4>
+                            <p>
+                                Our compassionate team provides elder care, post-op aid,
+                                and skilled nursing visits in the comfort of home.
+                            </p>
+                            <a href="contact.html#help-section" class="bd-promo-btn">
+                                Book Service
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                            <small class="bd-demo-note">Project demonstration • Non-emergency</small>
+                        </div>
+
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+
+        <!-- 3. BOTTOM FULL-WIDTH CTA -->
+        <section class="bd-bottom-cta-section" aria-labelledby="bd-cta-title">
+            <div class="bd-cta-container">
+                <div class="bd-bottom-cta">
+                    <span class="bd-hero-tag">EXPLORE YOUR NEXT STEP</span>
+                    <h2 id="bd-cta-title">Need Help Exploring Home Care Options?</h2>
+                    <p>
+                        Review our transparent care plans or submit a query through our demo help form
+                        to explore personalized home care options.
+                    </p>
+
+                    <div class="bd-cta-actions">
+                        <a href="contact.html#help-section" class="bd-hero-btn bd-hero-btn-primary">
+                            Get Help Form
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="pricing.html" class="bd-hero-btn bd-hero-btn-outline">
+                            View Pricing
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Agency information -->
+            <div class="footer-about">
+                <a href="index.html" class="brand">
+                    <span class="brand-icon">
+                        <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                    </span>
+
+                    <span class="brand-text">
+                        <span class="brand-name">Meridian Home Nursing</span>
+                        <span class="brand-subtitle">
+                            Home Nursing and Patient Care
+                        </span>
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    Caring support in the comfort of home. Explore our home
+                    nursing, elder care, and patient care services for your
+                    loved ones.
+                </p>
+
+                <!-- Demo placeholders: add real profile URLs to enable -->
+                <div class="footer-socials" aria-label="Social media">
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="Facebook — profile link coming soon" title="Facebook — coming soon">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="Instagram — profile link coming soon" title="Instagram — coming soon">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="LinkedIn — profile link coming soon" title="LinkedIn — coming soon">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="YouTube — profile link coming soon" title="YouTube — coming soon">
+                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Company -->
+            <nav class="footer-column" aria-label="Footer navigation">
+                <h2 class="footer-heading">Company</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Services -->
+            <nav class="footer-column" aria-label="Care services">
+                <h2 class="footer-heading">Our Services</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="services.html">Post-Surgery Care</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Elder Care</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Patient Care</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Injections &amp; Dressing</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Patient Care Support</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Resources -->
+            <nav class="footer-column" aria-label="Care services">
+                <h2 class="footer-heading">Resources</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Tutorials</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Support</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div>
+            <div class="footer-bottom">
+                <div>&copy; GreenFlow. All rights Reserved.</div>
+                <div class="footer-bottom-nav">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="header.js"></script>
+    <script src="blogreadmore.js"></script>
+</body>
+
+</html>

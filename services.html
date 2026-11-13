@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Left: Agency branding -->
+            <a href="index.html" class="brand">
+                <span class="brand-icon">
+                    <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                </span>
+
+                <span class="brand-text">
+                    <span class="brand-name">Meridian Home Nursing</span>
+                    <span class="brand-subtitle">
+                        Home Nursing and Patient Care
+                    </span>
+                </span>
+            </a>
+
+            <!-- Middle: Navigation -->
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul class="nav-list">
+
+                    <li class="home-dropdown">
+                        <button type="button" class="home-toggle" id="homeToggle" aria-expanded="false"
+                            aria-controls="homeDropdown">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+
+                        <ul class="dropdown-list" id="homeDropdown" hidden>
+                            <li>
+                                <a href="index.html">Classic</a>
+                            </li>
+
+                            <li>
+                                <a href="home-standard.html">Standard</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Mobile booking link -->
+                <a href="bookserviceform.html" class="mobile-book">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    Book Service
+                </a>
+            </nav>
+
+            <!-- Right: Header controls -->
+            <div class="header-actions">
+
+                <button type="button" class="icon-button" id="rtlToggle" aria-label="Switch to right-to-left layout"
+                    aria-pressed="false" title="Switch to right-to-left layout">
+                    <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="icon-button" id="darkModeToggle" aria-label="Enable dark mode"
+                    aria-pressed="false" title="Enable dark mode">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="bookserviceform.html" class="book-button">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    <span>Book Service</span>
+                </a>
+
+                <button type="button" class="icon-button menu-toggle" id="menuToggle" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="mainNav">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <!-- 1. Services Hero -->
+        <section class="services-hero">
+            <div class="services-hero-container">
+                <span class="hero-tag">
+                    <i class="fa-solid fa-hand-holding-medical"></i>
+                    Our Care Services
+                </span>
+
+                <h1 class="services-hero-title">
+                    Professional Care Services <span>at Home</span>
+                </h1>
+
+                <p class="services-hero-text">
+                    We provide trusted home nursing, elder care, post-surgery support,
+                    injections, dressing, and personalized patient care services.
+                </p>
+
+                <div class="services-hero-points">
+                    <div class="hero-point">
+                        <i class="fa-solid fa-user-nurse"></i>
+                        <span>Trained Caregivers</span>
+                    </div>
+
+                    <div class="hero-point">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <span>Safe &amp; Hygienic Care</span>
+                    </div>
+
+                    <div class="hero-point">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="btn-primary">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Request a Care Plan
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Main Services -->
+        <section class="main-services">
+            <div class="section-head">
+                <span class="section-tag">Main Services</span>
+
+                <h2>Complete Home Care Solutions</h2>
+
+                <p>
+                    Professional care services designed to support
+                    patients and families at home.
+                </p>
+            </div>
+
+            <div class="main-services-grid">
+
+                <!-- Card 1: Post-Surgery Care -->
+                <article class="main-service-card">
+
+                    <div class="main-service-image">
+                        <img src="Images/servicepageimage2.jpeg"
+                            alt="Caregiver supporting a patient during recovery at home" width="640" height="440"
+                            loading="lazy">
+                    </div>
+
+                    <div class="main-service-content">
+                        <h3>Post-Surgery Care</h3>
+
+                        <p>
+                            Complete recovery support after hospital
+                            discharge or surgery.
+                        </p>
+
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Recovery monitoring</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Medication reminders</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Mobility assistance</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Wound monitoring</span>
+                            </li>
+                        </ul>
+
+                        <a href="viewserivces.html" class="main-service-button"
+                            aria-label="View more about Post-Surgery Care">
+                            View More
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Card 2: Elder Care -->
+                <article class="main-service-card">
+
+                    <div class="main-service-image">
+                        <img src="Images/servicepageimage3.jpeg" alt="Caregiver assisting an older adult at home"
+                            width="640" height="440" loading="lazy">
+                    </div>
+
+                    <div class="main-service-content">
+                        <h3>Elder Care</h3>
+
+                        <p>
+                            Respectful daily support and companionship
+                            for senior citizens.
+                        </p>
+
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Daily living support</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Companionship</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Mobility assistance</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Personal hygiene support</span>
+                            </li>
+                        </ul>
+
+                        <a href="viewserivces.html" class="main-service-button" aria-label="View more about Elder Care">
+                            View More
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Card 3: Injections and Dressing -->
+                <article class="main-service-card">
+
+                    <div class="main-service-image">
+                        <img src="Images/servicepageimage4.jpeg" alt="Nurse providing wound dressing care" width="640"
+                            height="440" loading="lazy">
+                    </div>
+
+                    <div class="main-service-content">
+                        <h3>Injections &amp; Dressing</h3>
+
+                        <p>
+                            Safe injection assistance and professional
+                            wound dressing services.
+                        </p>
+
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Injection assistance</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Wound dressing</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Bandage changing</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Infection-care support</span>
+                            </li>
+                        </ul>
+
+                        <a href="viewserivces.html" class="main-service-button"
+                            aria-label="View more about Injections and Dressing">
+                            View More
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Card 4: Patient Care Support -->
+                <article class="main-service-card">
+
+                    <div class="main-service-image">
+                        <img src="Images/servicepageimage5.jpeg" alt="Caregiver helping a patient with daily activities"
+                            width="640" height="440" loading="lazy">
+                    </div>
+
+                    <div class="main-service-content">
+                        <h3>Patient Care Support</h3>
+
+                        <p>
+                            Personal and daily care support for patients
+                            who need extra help.
+                        </p>
+
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Bedridden patient care</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Feeding assistance</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Hygiene support</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                <span>Health monitoring</span>
+                            </li>
+                        </ul>
+
+                        <a href="viewserivces.html" class="main-service-button"
+                            aria-label="View more about Patient Care Support">
+                            View More
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 3. Additional Support Services -->
+        <section class="support-services">
+            <div class="section-head">
+                <span class="section-tag">Additional Support</span>
+                <h2>Extra Care Support Services</h2>
+                <p>Additional services to make daily care easier for patients and families.</p>
+            </div>
+
+            <div class="support-grid">
+                <div class="support-card">
+                    <i class="fa-solid fa-pills"></i>
+                    <h3>Medication Reminders</h3>
+                    <p>Timely reminders and support for prescribed medicines.</p>
+                </div>
+
+                <div class="support-card">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h3>Health Monitoring</h3>
+                    <p>Regular monitoring of blood pressure, sugar, and general health.</p>
+                </div>
+
+                <div class="support-card">
+                    <i class="fa-solid fa-person-walking"></i>
+                    <h3>Mobility Support</h3>
+                    <p>Safe assistance with walking, movement, and daily activities.</p>
+                </div>
+
+                <div class="support-card">
+                    <i class="fa-solid fa-comments"></i>
+                    <h3>Companionship</h3>
+                    <p>Friendly emotional support and company for patients and elders.</p>
+                </div>
+
+                <div class="support-card">
+                    <i class="fa-solid fa-hospital"></i>
+                    <h3>Hospital Assistance</h3>
+                    <p>Support for hospital visits and appointment-related assistance.</p>
+                </div>
+
+                <div class="support-card">
+                    <i class="fa-solid fa-broom"></i>
+                    <h3>Patient-Area Help</h3>
+                    <p>Light cleaning and organization support around the patient’s area.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. How Care Works -->
+        <section class="care-process">
+            <div class="section-head">
+                <span class="section-tag">Care Process</span>
+                <h2>How Our Care Works</h2>
+                <p>A simple and clear process to start professional home care.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <span>01</span>
+                    <i class="fa-solid fa-file-medical"></i>
+                    <h3>Submit Enquiry</h3>
+                    <p>Share your care requirements through our enquiry form.</p>
+                </div>
+
+                <div class="process-card">
+                    <span>02</span>
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <h3>Care Assessment</h3>
+                    <p>Our team understands the patient’s needs and prepares a care plan.</p>
+                </div>
+
+                <div class="process-card">
+                    <span>03</span>
+                    <i class="fa-solid fa-user-nurse"></i>
+                    <h3>Caregiver Matching</h3>
+                    <p>We assign a trained caregiver suitable for the patient.</p>
+                </div>
+
+                <div class="process-card">
+                    <span>04</span>
+                    <i class="fa-solid fa-house-medical"></i>
+                    <h3>Care Begins</h3>
+                    <p>Professional care starts at home with regular support.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Service Benefits -->
+        <section class="service-benefits">
+            <div class="benefits-container">
+                <div class="benefits-content">
+                    <span class="section-tag">Why Choose Our Services</span>
+                    <h2>Trusted, Safe & Personalized Care</h2>
+                    <p>
+                        Our services are designed to provide comfort, dignity, and professional
+                        support for every patient at home.
+                    </p>
+
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Trained and verified caregivers</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Personalized care plans</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Safe and hygienic care practices</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Affordable and transparent pricing</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>24/7 patient and family support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits-image">
+                    <img src="Images/serivcepageimage1.jpeg" alt="Caregiver supporting a patient at home">
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Services CTA -->
+        <section class="services-cta">
+            <div class="services-cta-container">
+                <div class="services-cta-content">
+                    <h2>Need a Personalized Care Plan?</h2>
+                    <p>Tell us your care needs, and our team will help you choose the right service.</p>
+                </div>
+
+                <a href="contact.html" class="btn-accent">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Request a Care Plan
+                </a>
+            </div>
+        </section>
+    </body>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Agency information -->
+            <div class="footer-about">
+                <a href="index.html" class="brand">
+                    <span class="brand-icon">
+                        <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                    </span>
+
+                    <span class="brand-text">
+                        <span class="brand-name">Meridian Home Nursing</span>
+                        <span class="brand-subtitle">
+                            Home Nursing and Patient Care
+                        </span>
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    Caring support in the comfort of home. Explore our home
+                    nursing, elder care, and patient care services for your
+                    loved ones.
+                </p>
+
+                <!-- Demo placeholders: add real profile URLs to enable -->
+                <div class="footer-socials" aria-label="Social media">
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="Facebook — profile link coming soon" title="Facebook — coming soon">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="Instagram — profile link coming soon" title="Instagram — coming soon">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="LinkedIn — profile link coming soon" title="LinkedIn — coming soon">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="YouTube — profile link coming soon" title="YouTube — coming soon">
+                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Company -->
+            <nav class="footer-column" aria-label="Footer navigation">
+                <h2 class="footer-heading">Company</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Services -->
+            <nav class="footer-column" aria-label="Care services">
+                <h2 class="footer-heading">Our Services</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="services.html">Post-Surgery Care</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Elder Care</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Patient Care</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Injections &amp; Dressing</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Patient Care Support</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Resources -->
+            <nav class="footer-column" aria-label="Care services">
+                <h2 class="footer-heading">Resources</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Tutorials</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Support</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div>
+            <div class="footer-bottom">
+                <div>&copy; GreenFlow. All rights Reserved.</div>
+                <div class="footer-bottom-nav">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+   <script src="header.js"></script>
+</body>
+
+</html>

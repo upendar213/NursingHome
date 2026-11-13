@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Nursing & Patient Care Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="pricing.css">
+
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Left: Agency branding -->
+            <a href="index.html" class="brand">
+                <span class="brand-icon">
+                    <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                </span>
+
+                <span class="brand-text">
+                    <span class="brand-name">Meridian Home Nursing</span>
+                    <span class="brand-subtitle">
+                        Home Nursing and Patient Care
+                    </span>
+                </span>
+            </a>
+
+            <!-- Middle: Navigation -->
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul class="nav-list">
+
+                    <li class="home-dropdown">
+                        <button type="button" class="home-toggle" id="homeToggle" aria-expanded="false"
+                            aria-controls="homeDropdown">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+
+                        <ul class="dropdown-list" id="homeDropdown" hidden>
+                            <li>
+                                <a href="index.html">Classic</a>
+                            </li>
+
+                            <li>
+                                <a href="home-standard.html">Standard</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Mobile booking link -->
+                <a href="bookserviceform.html" class="mobile-book">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    Book Service
+                </a>
+            </nav>
+
+            <!-- Right: Header controls -->
+            <div class="header-actions">
+
+                <button type="button" class="icon-button" id="rtlToggle" aria-label="Switch to right-to-left layout"
+                    aria-pressed="false" title="Switch to right-to-left layout">
+                    <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="icon-button" id="darkModeToggle" aria-label="Enable dark mode"
+                    aria-pressed="false" title="Enable dark mode">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="bookserviceform.html" class="book-button">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    <span>Book Service</span>
+                </a>
+
+                <button type="button" class="icon-button menu-toggle" id="menuToggle" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="mainNav">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+    <main class="pricing-page">
+        <!-- Pricing Hero -->
+        <section class="pricing-hero-banner">
+            <div class="pricing-hero-banner-overlay">
+                <div class="pricing-hero-banner-container">
+
+                    <div class="pricing-hero-banner-content">
+                        <span class="pricing-hero-eyebrow">
+                            OUR CARE PLANS
+                        </span>
+
+                        <h1>
+                            Thoughtful Care.<br>
+                            <span>Clear Pricing.</span>
+                        </h1>
+
+                        <p>
+                            Explore flexible care options for daily support,
+                            recovery assistance, and scheduled nursing visits.
+                        </p>
+
+                        <div class="pricing-hero-actions">
+                            <a href="#care-plans" class="pricing-hero-button">
+                                Explore Care Plans
+                                <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                            </a>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. Pricing Hero -->
+        <section class="pricing-section pricing-hero">
+            <div class="pricing-container pricing-hero-layout">
+
+                <div class="pricing-hero-content">
+                    <span class="pricing-eyebrow">OUR CARE PLANS</span>
+
+                    <h1>
+                        Thoughtful Care.<br>
+                        <span>Clear Pricing.</span>
+                    </h1>
+
+                    <p>
+                        Explore flexible care options for daily support,
+                        recovery assistance, and scheduled nursing visits.
+                    </p>
+
+                    <a href="#care-plans" class="pricing-button">
+                        Explore Care Plans
+                        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <aside class="pricing-hero-panel">
+                    <span class="pricing-panel-icon">
+                        <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+                    </span>
+
+                    <h2>A clear starting point for care</h2>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            Choose a visit or a daily support package
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            Review inclusions before making an enquiry
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            Request a plan for individual requirements
+                        </li>
+                    </ul>
+
+                    <p class="pricing-demo-note">
+                        Project demonstration: all prices and package terms
+                        on this page are fictional.
+                    </p>
+                </aside>
+
+            </div>
+        </section>
+
+        <!-- 2. Care Packages -->
+        <section class="pricing-section" id="care-plans">
+            <div class="pricing-container">
+
+                <div class="pricing-section-heading">
+                    <span class="pricing-eyebrow">CARE PACKAGES</span>
+                    <h2>Find a Suitable Starting Plan</h2>
+                    <p>
+                        Compare example packages by duration and type of support.
+                    </p>
+                </div>
+
+                <div class="pricing-plans-grid">
+
+                    <!-- Plan 1 -->
+                    <article class="pricing-plan">
+                        <span class="pricing-plan-icon">
+                            <i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Essential Support</h3>
+
+                        <p class="pricing-plan-description">
+                            Short-duration assistance with everyday routines.
+                        </p>
+
+                        <p class="pricing-amount">
+                            ₹799 <span>/ session</span>
+                        </p>
+
+                        <p class="pricing-duration">Up to 4 hours</p>
+
+                        <ul class="pricing-feature-list">
+                            <li>Companionship and conversation</li>
+                            <li>Personal routine assistance</li>
+                            <li>Medication reminders</li>
+                            <li>Walking and mobility assistance</li>
+                        </ul>
+
+                        <p class="pricing-plan-note">
+                            Nursing procedures are not included.
+                        </p>
+
+                        <a href="contact.html" class="pricing-button">
+                            Enquire About Essential
+                        </a>
+                    </article>
+
+                    <!-- Plan 2 -->
+                    <article class="pricing-plan pricing-plan-featured">
+                        <span class="pricing-plan-label">
+                            Longer daily support
+                        </span>
+
+                        <span class="pricing-plan-icon">
+                            <i class="fa-solid fa-person-cane" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Extended Support</h3>
+
+                        <p class="pricing-plan-description">
+                            Additional time for personal care and daily assistance.
+                        </p>
+
+                        <p class="pricing-amount">
+                            ₹1,499 <span>/ session</span>
+                        </p>
+
+                        <p class="pricing-duration">Up to 8 hours</p>
+
+                        <ul class="pricing-feature-list">
+                            <li>All Essential Support inclusions</li>
+                            <li>Personal hygiene assistance</li>
+                            <li>Meal setup and routine support</li>
+                            <li>Daily care summary for the family</li>
+                        </ul>
+
+                        <p class="pricing-plan-note">
+                            Nursing procedures are not included.
+                        </p>
+
+                        <a href="contact.html" class="pricing-btn">
+                            Enquire About Extended
+                        </a>
+                    </article>
+
+                    <!-- Plan 3 -->
+                    <article class="pricing-plan">
+                        <span class="pricing-plan-icon">
+                            <i class="fa-solid fa-user-nurse" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Nursing Visit</h3>
+
+                        <p class="pricing-plan-description">
+                            A scheduled visit for an agreed nursing requirement.
+                        </p>
+
+                        <p class="pricing-amount">
+                            ₹599 <span>/ visit</span>
+                        </p>
+
+                        <p class="pricing-duration">Up to 45 minutes</p>
+
+                        <ul class="pricing-feature-list">
+                            <li>One agreed nursing service</li>
+                            <li>Review of supplied care instructions</li>
+                            <li>Visit documentation</li>
+                            <li>Care-related observations shared</li>
+                        </ul>
+
+                        <p class="pricing-plan-note">
+                            Medicines and dressing supplies are extra.
+                            Clinical services require appropriate review.
+                        </p>
+
+                        <a href="contact.html" class="pricing-button">
+                            Enquire About a Visit
+                        </a>
+                    </article>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- 3. Individual Service Rates -->
+        <section class="pricing-section pricing-soft-section">
+            <div class="pricing-container">
+
+                <div class="pricing-section-heading">
+                    <span class="pricing-eyebrow">INDIVIDUAL SERVICES</span>
+                    <h2>Example Service Rates</h2>
+                    <p>
+                        Illustrative options for care booked separately.
+                    </p>
+                </div>
+
+                <div class="pricing-table-wrapper" role="region" aria-label="Example service rates" tabindex="0">
+                    <table class="pricing-table">
+                        <caption>
+                            Fictional project rates — not a live price list
+                        </caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Service</th>
+                                <th scope="col">Duration</th>
+                                <th scope="col">Demo Price</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">Elder care support</th>
+                                <td>Up to 4 hours</td>
+                                <td>₹799</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    Post-surgery daily-living support
+                                </th>
+                                <td>Up to 8 hours</td>
+                                <td>₹1,499</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">Prescribed injection visit</th>
+                                <td>One scheduled visit</td>
+                                <td>₹599</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">Routine wound dressing visit</th>
+                                <td>One scheduled visit</td>
+                                <td>₹699</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">Personalized care arrangement</th>
+                                <td>Based on requirements</td>
+                                <td>Request a quote</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="pricing-under-note">
+                    Post-surgery daily-living support excludes clinical procedures.
+                    Injection and dressing visits are subject to review of the
+                    care requirements and appropriate clinical instructions.
+                    Medicines and supplies are not included.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- 4. Inclusions and Additional Costs -->
+        <section class="pricing-section">
+            <div class="pricing-container">
+
+                <div class="pricing-section-heading">
+                    <span class="pricing-eyebrow">UNDERSTAND YOUR PLAN</span>
+                    <h2>Know What Is Included</h2>
+                    <p>
+                        Example package terms for this demonstration website.
+                    </p>
+                </div>
+
+                <div class="pricing-inclusions-grid">
+
+                    <article class="pricing-info-card">
+                        <span class="pricing-info-icon">
+                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Included in the Listed Package</h3>
+
+                        <ul class="pricing-feature-list">
+                            <li>The stated care duration</li>
+                            <li>Services listed on the selected package</li>
+                            <li>A basic care or visit summary</li>
+                            <li>Care coordination for the booked session</li>
+                        </ul>
+                    </article>
+
+                    <article class="pricing-info-card">
+                        <span class="pricing-info-icon">
+                            <i class="fa-solid fa-file-circle-plus" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Quoted Separately Where Applicable</h3>
+
+                        <ul class="pricing-feature-list">
+                            <li>Medicines and medical consumables</li>
+                            <li>Medical equipment or rental items</li>
+                            <li>Extra hours or additional visits</li>
+                            <li>Travel charges and applicable taxes</li>
+                        </ul>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. FAQs -->
+        <section class="pricing-section pricing-soft-section">
+            <div class="pricing-container pricing-faq-container">
+
+                <div class="pricing-section-heading">
+                    <span class="pricing-eyebrow">COMMON QUESTIONS</span>
+                    <h2>Pricing Questions, Answered</h2>
+                    <p>
+                        A few details about the example plans shown above.
+                    </p>
+                </div>
+
+                <div class="pricing-faq-list">
+
+                    <details class="pricing-faq">
+                        <summary>Are these actual agency prices?</summary>
+                        <p>
+                            No. All prices and package terms are fictional
+                            examples created for this project. Replace them
+                            with approved agency information before publishing.
+                        </p>
+                    </details>
+
+                    <details class="pricing-faq">
+                        <summary>
+                            Are medicines and dressing materials included?
+                        </summary>
+                        <p>
+                            In this sample pricing model, medicines, dressing
+                            materials, and medical equipment are excluded.
+                            Any additional costs would need to be confirmed
+                            before booking.
+                        </p>
+                    </details>
+
+                    <details class="pricing-faq">
+                        <summary>Can I request a different care duration?</summary>
+                        <p>
+                            Use the care enquiry page to describe your preferred
+                            schedule and requirements for a personalized quote.
+                        </p>
+                    </details>
+
+                    <details class="pricing-faq">
+                        <summary>
+                            Does personal care include injections or dressing?
+                        </summary>
+                        <p>
+                            No. The example personal-care packages are separate
+                            from nursing procedures. Nursing requirements must
+                            be reviewed and arranged separately.
+                        </p>
+                    </details>
+
+                    <details class="pricing-faq">
+                        <summary>
+                            What are the payment and cancellation terms?
+                        </summary>
+                        <p>
+                            Payment, rescheduling, and cancellation policies
+                            have not been defined for this demonstration.
+                            Approved terms should be provided before accepting
+                            a real booking.
+                        </p>
+                    </details>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. Pricing CTA -->
+        <section class="pricing-section">
+            <div class="pricing-container">
+
+                <div class="pricing-cta">
+                    <span class="pricing-eyebrow">PERSONALIZED SUPPORT</span>
+
+                    <h2>A Care Plan Around Your Requirements</h2>
+
+                    <p>
+                        Share the type of support and schedule you are looking
+                        for through our care enquiry page.
+                    </p>
+
+                    <div class="pricing-cta-actions">
+                        <a href="contact.html" class="pricing-butt">
+                            Request a Quote
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="services.html" class="pricing-button pricing-button-outline">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Agency information -->
+            <div class="footer-about">
+                <a href="index.html" class="brand">
+                    <span class="brand-icon">
+                        <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                    </span>
+
+                    <span class="brand-text">
+                        <span class="brand-name">Meridian Home Nursing</span>
+                        <span class="brand-subtitle">
+                            Home Nursing and Patient Care
+                        </span>
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    Caring support in the comfort of home. Explore our home
+                    nursing, elder care, and patient care services for your
+                    loved ones.
+                </p>
+
+                <!-- Demo placeholders: add real profile URLs to enable -->
+                <div class="footer-socials" aria-label="Social media">
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="Facebook — profile link coming soon" title="Facebook — coming soon">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="Instagram — profile link coming soon" title="Instagram — coming soon">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="LinkedIn — profile link coming soon" title="LinkedIn — coming soon">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="YouTube — profile link coming soon" title="YouTube — coming soon">
+                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Company -->
+            <nav class="footer-column" aria-label="Footer navigation">
+                <h2 class="footer-heading">Company</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Services -->
+            <nav class="footer-column" aria-label="Care services">
+                <h2 class="footer-heading">Our Services</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="services.html">Post-Surgery Care</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Elder Care</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Patient Care</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Injections &amp; Dressing</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Patient Care Support</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Resources -->
+            <nav class="footer-column" aria-label="Care services">
+                <h2 class="footer-heading">Resources</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Tutorials</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Support</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div>
+            <div class="footer-bottom">
+                <div>&copy; GreenFlow. All rights Reserved.</div>
+                <div class="footer-bottom-nav">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="header.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Nursing & Patient Care Agency</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Shared styles and JavaScript -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Left: Agency branding -->
+            <a href="index.html" class="brand">
+                <span class="brand-icon">
+                    <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                </span>
+
+                <span class="brand-text">
+                    <span class="brand-name">Meridian Home Nursing</span>
+                    <span class="brand-subtitle">
+                        Home Nursing and Patient Care
+                    </span>
+                </span>
+            </a>
+
+            <!-- Middle: Navigation -->
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul class="nav-list">
+
+                    <li class="home-dropdown">
+                        <button type="button" class="home-toggle" id="homeToggle" aria-expanded="false"
+                            aria-controls="homeDropdown">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+
+                        <ul class="dropdown-list" id="homeDropdown" hidden>
+                            <li>
+                                <a href="index.html">Classic</a>
+                            </li>
+
+                            <li>
+                                <a href="home-standard.html">Standard</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Mobile booking link -->
+                <a href="bookserviceform.html" class="mobile-book">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    Book Service
+                </a>
+            </nav>
+
+            <!-- Right: Header controls -->
+            <div class="header-actions">
+
+                <button type="button" class="icon-button" id="rtlToggle" aria-label="Switch to right-to-left layout"
+                    aria-pressed="false" title="Switch to right-to-left layout">
+                    <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="icon-button" id="darkModeToggle" aria-label="Enable dark mode"
+                    aria-pressed="false" title="Enable dark mode">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="bookserviceform.html" class="book-button">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    <span>Book Service</span>
+                </a>
+
+                <button type="button" class="icon-button menu-toggle" id="menuToggle" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="mainNav">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main class="home-main">
+
+        <!-- =======================================================
+         SECTION 1: HERO (ROTATING TEXT & FLOATING GLASS CARDS)
+    ======================================================= -->
+        <section class="m-hero">
+            <div class="m-container m-hero-container">
+                <div class="m-hero-content">
+                    <span class="m-hero-tag">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        TRUSTED HOME HEALTHCARE &bull; EST. 2018
+                    </span>
+
+                    <h1 class="m-hero-title">
+                        Everyday care essentials,
+                        <span class="m-rotator-wrapper">
+                            <span class="m-rotating-word is-visible">delivered.</span>
+                            <span class="m-rotating-word">personalized.</span>
+                            <span class="m-rotating-word">trusted.</span>
+                        </span>
+                        <br> with warmth.
+                    </h1>
+
+                    <p class="m-hero-desc">
+                        Compassionate, verified home nursing and patient care. Vetted attendants
+                        and qualified nurses supporting your family right at your doorstep.
+                    </p>
+
+                    <div class="m-hero-actions">
+                        <a href="services.html" class="m-btn m-btn-primary">
+                            <span>Explore Care</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="services.html" class="m-btn m-btn-secondary">
+                            Book Consultation
+                        </a>
+                    </div>
+
+                    <div class="m-hero-trust-bar">
+                        <div class="m-trust-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Vetted &amp; Certified Staff</span>
+                        </div>
+                        <div class="m-trust-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Transparent Plans</span>
+                        </div>
+                        <div class="m-trust-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Daily Family Updates</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-hero-visual">
+                    <div class="m-hero-image-wrapper">
+                        <img src="Images/indexpageimage2.jpeg" alt="Compassionate caregiver supporting patient at home"
+                            class="m-hero-main-img" width="680" height="520">
+                        <!-- Floating Card 1: Live Status -->
+                        <div class="m-float-card m-float-top">
+                            <span class="m-live-dot"></span>
+                            <div class="m-float-text">
+                                <strong>Caregiver On-Duty</strong>
+                                <small>Arriving in 30 mins</small>
+                            </div>
+                        </div>
+                        <!-- Floating Card 2: RN Verified -->
+                        <div class="m-float-card m-float-mid">
+                            <div class="m-float-icon"><i class="fa-solid fa-user-nurse"></i></div>
+                            <div class="m-float-text">
+                                <strong>RN Verified</strong>
+                                <small>Clinical &amp; Police Vetted</small>
+                            </div>
+                        </div>
+                        <!-- Floating Card 3: Rating -->
+                        <div class="m-float-card m-float-bottom">
+                            <div class="m-rating-badge">★ 4.9</div>
+                            <div class="m-float-text">
+                                <strong>Customer Rating</strong>
+                                <small>1,200+ family reviews</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =======================================================
+         SECTION 2: CATEGORY GRID ("CARE BY WHAT YOUR LOVED ONE NEEDS")
+    ======================================================= -->
+        <section class="m-section" id="categories">
+            <div class="m-container">
+                <div class="m-section-header">
+                    <span class="m-eyebrow">CARE ESSENTIALS</span>
+                    <h2>Care by What Your Loved One Needs</h2>
+                    <p>Carefully structured care categories, each managed by certified home attendants and
+                        nurses.</p>
+                </div>
+
+                <div class="m-cat-grid">
+                    <div class="m-cat-card">
+                        <div class="m-cat-img-wrap">
+                            <img src="Images/indeximage3.jpeg" alt="Post-Surgery recovery at home" loading="lazy">
+                        </div>
+                        <div class="m-cat-info">
+                            <h3>Post-Surgery Recovery</h3>
+                            <p>Hospital discharge aid, recovery monitoring, and doctor-instructed mobility
+                                assistance.</p>
+                            <a href="services.html" class="m-cat-link">Explore <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="m-cat-card">
+                        <div class="m-cat-img-wrap">
+                            <img src="Images/indeximage4.jpeg" alt="Elder care companionship" loading="lazy">
+                        </div>
+                        <div class="m-cat-info">
+                            <h3>Elder Care &amp; Routine</h3>
+                            <p>Respectful daily living assistance, personal hygiene, and conversational
+                                companionship.</p>
+                            <a href="services.html" class="m-cat-link">Explore <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="m-cat-card">
+                        <div class="m-cat-img-wrap">
+                            <img src="Images/indeximage5.jpeg" alt="Wound dressing and injection nursing"
+                                loading="lazy">
+                        </div>
+                        <div class="m-cat-info">
+                            <h3>Injections &amp; Dressing</h3>
+                            <p>Physician-prescribed injections, sterile wound dressing, and catheter care
+                                visits.</p>
+                            <a href="services.html" class="m-cat-link">Explore <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="m-cat-card">
+                        <div class="m-cat-img-wrap">
+                            <img src="Images/indeximage6.jpeg" alt="Bedridden patient care support" loading="lazy">
+                        </div>
+                        <div class="m-cat-info">
+                            <h3>Patient Bedside Care</h3>
+                            <p>Dedicated personal care for bedridden individuals, assisted feeding, and mobility
+                                handling.</p>
+                            <a href="service-details.html#patient-care-support" class="m-cat-link">Explore <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =======================================================
+         SECTION 3: WHY TRUST US (WITH ANIMATED COUNTERS)
+    ======================================================= -->
+        <section class="m-section m-soft-section" id="why-trust">
+            <div class="m-container">
+                <div class="m-trust-layout">
+                    <div class="m-trust-visual">
+                        <div class="m-trust-img-box">
+                            <img src="Images/indeximage7.jpeg" alt="Verified nurse testing vital stats" loading="lazy">
+                            <div class="m-trust-experience-badge">
+                                <strong>8+</strong>
+                                <span>Years of Trusted Home Care</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-trust-content">
+                        <span class="m-eyebrow">WHY MERIDIAN</span>
+                        <h2>A Care Agency You Can Trust with Your Family's Health</h2>
+                        <p class="m-trust-lead">
+                            Every caregiver passes through thorough background verification and clinical
+                            scrutiny.
+                            We never compromise on the safety, respect, and dignity of your loved ones.
+                        </p>
+
+                        <div class="m-trust-features">
+                            <div class="m-trust-feat-item">
+                                <div class="m-feat-icon"><i class="fa-solid fa-user-shield"></i></div>
+                                <div>
+                                    <h4>Licensed &amp; Verified Staff</h4>
+                                    <p>Police verified, background-checked, and medically certified attendants.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="m-trust-feat-item">
+                                <div class="m-feat-icon"><i class="fa-solid fa-notes-medical"></i></div>
+                                <div>
+                                    <h4>Personalized Care Plans</h4>
+                                    <p>Custom shift schedules aligned with treating doctor discharge notes.</p>
+                                </div>
+                            </div>
+
+                            <div class="m-trust-feat-item">
+                                <div class="m-feat-icon"><i class="fa-solid fa-comments"></i></div>
+                                <div>
+                                    <h4>Free Care Coordinator Consultation</h4>
+                                    <p>Talk directly with our care manager to evaluate the best home support
+                                        option.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animated Counters Bar -->
+                <div class="m-counter-bar">
+                    <div class="m-counter-item">
+                        <div class="m-counter-num"><span class="m-count-up" data-target="1200">0</span>+</div>
+                        <p class="m-counter-label">Families Supported</p>
+                    </div>
+                    <div class="m-counter-item">
+                        <div class="m-counter-num"><span class="m-count-up" data-target="100">0</span>%</div>
+                        <p class="m-counter-label">Background Checked</p>
+                    </div>
+                    <div class="m-counter-item">
+                        <div class="m-counter-num"><span class="m-count-up" data-target="35">0</span>+</div>
+                        <p class="m-counter-label">City Hubs Active</p>
+                    </div>
+                    <div class="m-counter-item">
+                        <div class="m-counter-num"><span class="m-count-up" data-target="24">0</span>/7</div>
+                        <p class="m-counter-label">Coordinator Helpline</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =======================================================
+         SECTION 4: HOW CARE BEGINS IN 4 STEPS
+    ======================================================= -->
+        <section class="m-section" id="how-it-works">
+            <div class="m-container">
+                <div class="m-section-header">
+                    <span class="m-eyebrow">HOME CARE PROCESS</span>
+                    <h2>From Your First Call to Your Door in 4 Steps</h2>
+                    <p>Arranging quality home care is transparent, simple, and rapid.</p>
+                </div>
+
+                <div class="m-process-layout">
+                    <div class="m-process-steps">
+                        <div class="m-process-card is-active">
+                            <span class="m-step-num">01</span>
+                            <div class="m-step-info">
+                                <h4>Submit Enquiry</h4>
+                                <p>Share your care schedule and patient condition via our form or phone.</p>
+                            </div>
+                        </div>
+
+                        <div class="m-process-card">
+                            <span class="m-step-num">02</span>
+                            <div class="m-step-info">
+                                <h4>Care Assessment</h4>
+                                <p>Our care coordinator speaks with you to structure a custom care routine.</p>
+                            </div>
+                        </div>
+
+                        <div class="m-process-card">
+                            <span class="m-step-num">03</span>
+                            <div class="m-step-info">
+                                <h4>Caregiver Matching</h4>
+                                <p>A certified, background-checked attendant or nurse is assigned.</p>
+                            </div>
+                        </div>
+
+                        <div class="m-process-card">
+                            <span class="m-step-num">04</span>
+                            <div class="m-step-info">
+                                <h4>Doorstep Care Begins</h4>
+                                <p>Caregiver arrives on schedule with daily family observation logging.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-process-visual">
+                        <img src="Images/indeximage8.jpeg" alt="Meridian care team coordination" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =======================================================
+         SECTION 5: INTERACTIVE CONDITION TABS ("CARE BY NEED")
+    ======================================================= -->
+        <section class="m-section m-soft-section" id="care-by-condition">
+            <div class="m-container">
+                <div class="m-section-header">
+                    <span class="m-eyebrow">TAILORED CARE</span>
+                    <h2>Care that Starts with What Matters to You</h2>
+                    <p>Select a care scenario below to view recommended plans.</p>
+                </div>
+
+                <!-- Tab Switcher Navigation -->
+                <div class="m-tab-nav" role="tablist">
+                    <button type="button" class="m-tab-pill is-active" data-tab="tab-recovery" role="tab"
+                        aria-selected="true">
+                        <i class="fa-solid fa-heart-pulse"></i> Post-Hospital Recovery
+                    </button>
+                    <button type="button" class="m-tab-pill" data-tab="tab-senior" role="tab" aria-selected="false">
+                        <i class="fa-solid fa-person-cane"></i> Elder Independence
+                    </button>
+                    <button type="button" class="m-tab-pill" data-tab="tab-bedridden" role="tab" aria-selected="false">
+                        <i class="fa-solid fa-bed"></i> Bedridden Patient Aid
+                    </button>
+                    <button type="button" class="m-tab-pill" data-tab="tab-nursing" role="tab" aria-selected="false">
+                        <i class="fa-solid fa-syringe"></i> Clinical Nursing
+                    </button>
+                </div>
+
+                <!-- Tab Panels Container -->
+                <div class="m-tab-container">
+                    <!-- Panel 1 -->
+                    <div class="m-tab-panel is-active" id="tab-recovery" role="tabpanel">
+                        <div class="m-tab-panel-grid">
+                            <div class="m-tab-image">
+                                <img src="Images/indeximage9.jpeg" alt="Post-surgery recovery caregiver" loading="lazy">
+                            </div>
+                            <div class="m-tab-info">
+                                <span class="m-tab-badge">Hospital Discharge Support</span>
+                                <h3>Smooth Recovery in Familiar Surroundings</h3>
+                                <p>Avoid hospital re-admissions with structured postoperative support managed by
+                                    experienced caregivers.</p>
+                                <ul class="m-tab-checklist">
+                                    <li><i class="fa-solid fa-circle-check"></i> Vital sign logging and
+                                        temperature tracking</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Medication schedule
+                                        administration</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Coordinated dressing changes
+                                        and wound care</li>
+                                </ul>
+                                <a href="bookserviceform.html" class="m-btn m-btn-primary">Book Post-Surgery
+                                    Care</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2 -->
+                    <div class="m-tab-panel" id="tab-senior" role="tabpanel">
+                        <div class="m-tab-panel-grid">
+                            <div class="m-tab-image">
+                                <img src="Images/indeximage10.jpeg" alt="Elder care companion assistance"
+                                    loading="lazy">
+                            </div>
+                            <div class="m-tab-info">
+                                <span class="m-tab-badge">Elder Living Support</span>
+                                <h3>Maintaining Senior Dignity &amp; Routines</h3>
+                                <p>Support your aging parents with reliable companionship, grooming aid, and
+                                    safety observation.</p>
+                                <ul class="m-tab-checklist">
+                                    <li><i class="fa-solid fa-circle-check"></i> Assistance with bathing,
+                                        grooming &amp; daily mobility</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Conversational companionship
+                                        &amp; mental stimulation</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Safe fall prevention and
+                                        walking guidance</li>
+                                </ul>
+                                <a href="bookserviceform.html" class="m-btn m-btn-primary">Book Elder Care</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 3 -->
+                    <div class="m-tab-panel" id="tab-bedridden" role="tabpanel">
+                        <div class="m-tab-panel-grid">
+                            <div class="m-tab-image">
+                                <img src="Images/indeximage11.jpeg" alt="Bedridden patient assistance" loading="lazy">
+                            </div>
+                            <div class="m-tab-info">
+                                <span class="m-tab-badge">Dedicated Bedside Aid</span>
+                                <h3>Attentive Care for Immobile Loved Ones</h3>
+                                <p>Full-spectrum support for individuals needing around-the-clock physical
+                                    handling and personal care.</p>
+                                <ul class="m-tab-checklist">
+                                    <li><i class="fa-solid fa-circle-check"></i> Regular body repositioning to
+                                        prevent bedsores</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Complete hygiene, sponge bath
+                                        &amp; diaper changes</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Assisted feeding and hydration
+                                        monitoring</li>
+                                </ul>
+                                <a href="bookserviceform.html" class="m-btn m-btn-primary">Book Patient
+                                    Support</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 4 -->
+                    <div class="m-tab-panel" id="tab-nursing" role="tabpanel">
+                        <div class="m-tab-panel-grid">
+                            <div class="m-tab-image">
+                                <img src="Images/indeximage12.jpeg" alt="Clinical home nursing procedures"
+                                    loading="lazy">
+                            </div>
+                            <div class="m-tab-info">
+                                <span class="m-tab-badge">Qualified Nursing Staff</span>
+                                <h3>Physician-Prescribed Clinical Procedures</h3>
+                                <p>Sterile and certified home clinical interventions delivered without visiting
+                                    crowded hospital wards.</p>
+                                <ul class="m-tab-checklist">
+                                    <li><i class="fa-solid fa-circle-check"></i> Intramuscular &amp;
+                                        subcutaneous injections</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Surgical, diabetic and burn
+                                        wound dressing</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Catheter and IV infusion
+                                        management</li>
+                                </ul>
+                                <a href="bookserviceform.html" class="m-btn m-btn-primary">Book Clinical
+                                    Nurse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =======================================================
+         SECTION 6: FAMILY REVIEWS SLIDER
+    ======================================================= -->
+        <section class="m-section" id="reviews">
+            <div class="m-container">
+                <div class="m-section-header">
+                    <span class="m-eyebrow">TESTIMONIALS</span>
+                    <h2>Loved by Hundreds of Families</h2>
+                    <p>Read how our caregivers provide peace of mind during difficult recovery times.</p>
+                </div>
+
+                <div class="m-slider-container">
+                    <div class="m-slide is-active">
+                        <div class="m-slide-card">
+                            <div class="m-slide-stars"><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <blockquote class="m-slide-quote">
+                                &ldquo;Arranging home nursing for my father after his knee replacement surgery
+                                was seamless.
+                                The nurse arrived on time every morning, monitored his dressing meticulously,
+                                and gave our
+                                family complete confidence.&rdquo;
+                            </blockquote>
+                            <div class="m-slide-author">
+                                <strong>Rahul M.</strong>
+                                <span>Post-Surgery Care &bull; Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-slide">
+                        <div class="m-slide-card">
+                            <div class="m-slide-stars"><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <blockquote class="m-slide-quote">
+                                &ldquo;Our elder care attendant is treated like a member of our family. Her
+                                patience, warmth,
+                                and careful assistance with my mother's mobility has made an incredible
+                                difference in her daily mood.&rdquo;
+                            </blockquote>
+                            <div class="m-slide-author">
+                                <strong>Ananya K.</strong>
+                                <span>Elder Care Support &bull; Secunderabad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-slide">
+                        <div class="m-slide-card">
+                            <div class="m-slide-stars"><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <blockquote class="m-slide-quote">
+                                &ldquo;Having certified nurses visit at home for daily injections treated and
+                                wound
+                                dressing saved us
+                                from making daily trips to the hospital. Truly incredible compassionate
+                                attendant is treated
+                                service.&rdquo;
+                            </blockquote>
+                            <div class="m-slide-author">
+                                <strong>Priya S.</strong>
+                                <span>Nursing Visits &bull; Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Arrows & Dots -->
+                    <div class="m-slider-controls">
+                        <button type="button" class="m-slider-arrow" id="sliderPrev" aria-label="Previous review">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <div class="m-slider-dots" id="sliderDots">
+                            <span class="m-dot is-active" data-index="0"></span>
+                            <span class="m-dot" data-index="1"></span>
+                            <span class="m-dot" data-index="2"></span>
+                        </div>
+                        <button type="button" class="m-slider-arrow" id="sliderNext" aria-label="Next review">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =======================================================
+         SECTION 7: FINAL CALL TO ACTION (PRIMARY & SECONDARY BUTTONS)
+    ======================================================= -->
+        <section class="m-cta-banner">
+            <div class="m-container">
+                <div class="m-cta-inner">
+                    <span class="m-cta-tag">GET STARTED TODAY</span>
+                    <h2>Find Your Family's Balance. Start Your Home Care Consultation.</h2>
+                    <p>
+                        Talk with our dedicated care coordinators to organize a verified caregiver or clinical
+                        nurse
+                        matched to your specific schedule and needs.
+                    </p>
+
+                    <div class="m-cta-buttons">
+                        <!-- Primary Button -->
+                        <a href="bookserviceform.html" class="m-btn m-btn-primary">
+                            <span>Book Consultation</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <!-- Secondary Button -->
+                        <a href="contact.html#help-section" class="m-btn m-btn-secondary">
+                            Talk to Care Team
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Agency information -->
+            <div class="footer-about">
+                <a href="index.html" class="brand">
+                    <span class="brand-icon">
+                        <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                    </span>
+
+                    <span class="brand-text">
+                        <span class="brand-name">Meridian Home Nursing</span>
+                        <span class="brand-subtitle">
+                            Home Nursing and Patient Care
+                        </span>
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    Caring support in the comfort of home. Explore our home
+                    nursing, elder care, and patient care services for your
+                    loved ones.
+                </p>
+
+                <!-- Demo placeholders: add real profile URLs to enable -->
+                <div class="footer-socials" aria-label="Social media">
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="Facebook — profile link coming soon" title="Facebook — coming soon">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="Instagram — profile link coming soon" title="Instagram — coming soon">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="LinkedIn — profile link coming soon" title="LinkedIn — coming soon">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="YouTube — profile link coming soon" title="YouTube — coming soon">
+                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Company -->
+            <nav class="footer-column" aria-label="Footer navigation">
+                <h2 class="footer-heading">Company</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Services -->
+            <nav class="footer-column" aria-label="Care services">
+                <h2 class="footer-heading">Our Services</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="services.html">Post-Surgery Care</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Elder Care</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Patient Care</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Injections &amp; Dressing</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Patient Care Support</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Resources -->
+            <nav class="footer-column" aria-label="Care services">
+                <h2 class="footer-heading">Resources</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Tutorials</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Support</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div>
+            <div class="footer-bottom">
+                <div>&copy; GreenFlow. All rights Reserved.</div>
+                <div class="footer-bottom-nav">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <script src="header.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

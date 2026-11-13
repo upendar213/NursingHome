@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page Home Nursing </title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Left: Agency branding -->
+            <a href="index.html" class="brand">
+                <span class="brand-icon">
+                    <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                </span>
+
+                <span class="brand-text">
+                    <span class="brand-name">Meridian Home Nursing</span>
+                    <span class="brand-subtitle">
+                        Home Nursing and Patient Care
+                    </span>
+                </span>
+            </a>
+
+            <!-- Middle: Navigation -->
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul class="nav-list">
+
+                    <li class="home-dropdown">
+                        <button type="button" class="home-toggle" id="homeToggle" aria-expanded="false"
+                            aria-controls="homeDropdown">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+
+                        <ul class="dropdown-list" id="homeDropdown" hidden>
+                            <li>
+                                <a href="index.html">Classic</a>
+                            </li>
+
+                            <li>
+                                <a href="home-standard.html">Standard</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Mobile booking link -->
+                <a href="bookserviceform.html" class="mobile-book">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    Book Service
+                </a>
+            </nav>
+
+            <!-- Right: Header controls -->
+            <div class="header-actions">
+
+                <button type="button" class="icon-button" id="rtlToggle" aria-label="Switch to right-to-left layout"
+                    aria-pressed="false" title="Switch to right-to-left layout">
+                    <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="icon-button" id="darkModeToggle" aria-label="Enable dark mode"
+                    aria-pressed="false" title="Enable dark mode">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+
+                <a href="bookserviceform.html" class="book-button">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                    <span>Book Service</span>
+                </a>
+
+                <button type="button" class="icon-button menu-toggle" id="menuToggle" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="mainNav">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+    <main class="blog-page">
+        <!-- ========================================
+     NEW TOP SECTION: BLOG IMAGE BANNER
+========================================= -->
+        <section class="blog-top-banner" aria-labelledby="blog-banner-title">
+            <div class="blog-container">
+                <div class="blog-top-banner-content">
+
+                    <span class="blog-eyebrow">
+                        THE MERIDIAN CARE JOURNAL
+                    </span>
+
+                    <h2 id="blog-banner-title">
+                        Thoughtful Reading.<br>
+                        For Care That Feels Like Home.
+                    </h2>
+
+                    <p>
+                        Explore ideas about family support,
+                        everyday routines, and planning care
+                        around the people who matter.
+                    </p>
+
+                    <a href="#blog-latest" class="blog-button">
+                        Explore Articles
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================================
+         2. FEATURED ARTICLE
+    ========================================= -->
+        <section class="blog-section" aria-labelledby="blog-featured-title">
+            <div class="blog-container">
+
+                <div class="blog-featured">
+
+                    <div class="blog-featured-image">
+                        <img src="Images/blogimage1.jpeg"
+                            alt="Caregiver and family members discussing everyday home-care support" width="800"
+                            height="600" loading="lazy">
+                    </div>
+
+                    <div class="blog-featured-content">
+                        <span class="blog-category">
+                            Care Planning
+                        </span>
+
+                        <h2 id="blog-featured-title">
+                            Planning Home-Care Support:
+                            Questions for Families to Consider
+                        </h2>
+
+                        <p>
+                            A simple introduction to discussing daily routines,
+                            personal preferences, and the type of support
+                            a family wants to explore.
+                        </p>
+
+                        <div class="blog-article-meta">
+                            <span>
+                                <i class="fa-regular fa-user" aria-hidden="true"></i>
+                                Meridian Demo Editorial Team
+                            </span>
+
+                            <span>
+                                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                Sample date
+                            </span>
+
+                            <span>
+                                <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                4 min read
+                            </span>
+                        </div>
+
+                        <a href="blogreaedarticle.html" class="blog-button"
+                            aria-label="Read the featured article about planning home-care support">
+                            Read Article
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================
+         3. LATEST ARTICLES
+    ========================================= -->
+        <section class="blog-section blog-soft-section" aria-labelledby="blog-latest-title">
+            <div class="blog-container">
+
+                <div class="blog-section-heading">
+                    <span class="blog-eyebrow">LATEST ARTICLES</span>
+
+                    <h2 id="blog-latest-title">
+                        Explore Everyday Care Topics
+                    </h2>
+
+                    <p>
+                        Browse sample articles about home-care planning,
+                        family support, and everyday routines.
+                    </p>
+                </div>
+
+                <!-- Category filters -->
+                <div class="blog-filters" role="group" aria-label="Filter blog articles by category">
+                    <button type="button" class="blog-filter is-active" data-filter="all" aria-pressed="true">
+                        All Articles
+                    </button>
+
+                    <button type="button" class="blog-filter" data-filter="care-planning" aria-pressed="false">
+                        Care Planning
+                    </button>
+
+                    <button type="button" class="blog-filter" data-filter="post-surgery-care" aria-pressed="false">
+                        Post-Surgery Care
+                    </button>
+
+                    <button type="button" class="blog-filter" data-filter="elder-care" aria-pressed="false">
+                        Elder Care
+                    </button>
+
+                    <button type="button" class="blog-filter" data-filter="nursing-visits" aria-pressed="false">
+                        Nursing Visits
+                    </button>
+
+                    <button type="button" class="blog-filter" data-filter="patient-care" aria-pressed="false">
+                        Patient Care
+                    </button>
+
+                    <button type="button" class="blog-filter" data-filter="family-support" aria-pressed="false">
+                        Family Support
+                    </button>
+                </div>
+
+                <!-- Article cards -->
+                <div class="blog-grid" id="blogGrid">
+
+                    <!-- Article 1 -->
+                    <article class="blog-card" data-category="post-surgery-care">
+                        <div class="blog-card-image">
+                            <img src="Images/blogimage2.jpeg"
+                                alt="Family preparing a comfortable home space for recovery" width="640" height="440"
+                                loading="lazy">
+
+                            <span class="blog-category">
+                                Post-Surgery Care
+                            </span>
+                        </div>
+
+                        <div class="blog-card-content">
+                            <h3>
+                                <a href="blogreadmore.html">
+                                    Preparing Your Home for a Loved One’s Return
+                                </a>
+                            </h3>
+
+                            <p>
+                                Questions to discuss before discharge and how
+                                families can organize practical support.
+                            </p>
+
+                            <div class="blog-article-meta">
+                                <span>
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                    Sample date
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                    4 min read
+                                </span>
+                            </div>
+
+                            <a href="blogreadmore.html" class="blog-card-link"
+                                aria-label="Read more about preparing your home for a loved one’s return">
+                                Read More
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="blog-card" data-category="elder-care">
+                        <div class="blog-card-image">
+                            <img src="Images/blogimage3.jpeg"
+                                alt="Caregiver and older adult sharing a calm moment at home" width="640" height="440"
+                                loading="lazy">
+
+                            <span class="blog-category">
+                                Elder Care
+                            </span>
+                        </div>
+
+                        <div class="blog-card-content">
+                            <h3>
+                                <a href="blogreadmore.html">
+                                    Building Everyday Routines Around
+                                    Personal Preferences
+                                </a>
+                            </h3>
+
+                            <p>
+                                A sample discussion of companionship, interests,
+                                and familiar routines.
+                            </p>
+
+                            <div class="blog-article-meta">
+                                <span>
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                    Sample date
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                    4 min read
+                                </span>
+                            </div>
+
+                            <a href="blogreadmore.html" class="blog-card-link"
+                                aria-label="Read more about building everyday routines around personal preferences">
+                                Read More
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-card" data-category="nursing-visits">
+                        <div class="blog-card-image">
+                            <img src="Images/blogimage4.jpeg"
+                                alt="Nurse discussing a care plan with a patient and family member" width="640"
+                                height="440" loading="lazy">
+
+                            <span class="blog-category">
+                                Nursing Visits
+                            </span>
+                        </div>
+
+                        <div class="blog-card-content">
+                            <h3>
+                                <a href="blogreadmore.html">
+                                    Questions to Ask Before a Scheduled
+                                    Nursing Visit
+                                </a>
+                            </h3>
+
+                            <p>
+                                What families may want to clarify about
+                                instructions, visit scope, and supplies.
+                            </p>
+
+                            <div class="blog-article-meta">
+                                <span>
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                    Sample date
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                    4 min read
+                                </span>
+                            </div>
+
+                            <a href="blogreadmore.html" class="blog-card-link"
+                                aria-label="Read more about questions to ask before a scheduled nursing visit">
+                                Read More
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="blog-card" data-category="patient-care">
+                        <div class="blog-card-image">
+                            <img src="Images/blogimage5.jpeg"
+                                alt="Caregiver helping a patient with daily activities at home" width="640" height="440"
+                                loading="lazy">
+
+                            <span class="blog-category">
+                                Patient Care
+                            </span>
+                        </div>
+
+                        <div class="blog-card-content">
+                            <h3>
+                                <a href="blogreadmore.html">
+                                    Understanding Personal Care and
+                                    Nursing Support
+                                </a>
+                            </h3>
+
+                            <p>
+                                A simple explanation of the difference between
+                                everyday assistance and clinical nursing visits.
+                            </p>
+
+                            <div class="blog-article-meta">
+                                <span>
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                    Sample date
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                    4 min read
+                                </span>
+                            </div>
+
+                            <a href="blogreadmore.html" class="blog-card-link"
+                                aria-label="Read more about understanding personal care and nursing support">
+                                Read More
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="blog-card" data-category="family-support">
+                        <div class="blog-card-image">
+                            <img src="Images/blogimage6.jpeg"
+                                alt="Family members discussing care responsibilities together" width="640" height="440"
+                                loading="lazy">
+
+                            <span class="blog-category">
+                                Family Support
+                            </span>
+                        </div>
+
+                        <div class="blog-card-content">
+                            <h3>
+                                <a href="blogreadmore.html">
+                                    Sharing Care Responsibilities
+                                    Within the Family
+                                </a>
+                            </h3>
+
+                            <p>
+                                A sample approach to organizing tasks
+                                and communication.
+                            </p>
+
+                            <div class="blog-article-meta">
+                                <span>
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                    Sample date
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                    4 min read
+                                </span>
+                            </div>
+
+                            <a href="blogreadmore.html" class="blog-card-link"
+                                aria-label="Read more about sharing care responsibilities within the family">
+                                Read More
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="blog-card" data-category="care-planning">
+                        <div class="blog-card-image">
+                            <img src="Images/blogimage7.jpeg" alt="Family reviewing everyday care preferences together"
+                                width="640" height="440" loading="lazy">
+
+                            <span class="blog-category">
+                                Care Planning
+                            </span>
+                        </div>
+
+                        <div class="blog-card-content">
+                            <h3>
+                                <a href="blogreadmore.html">
+                                    Choosing Topics for Your First
+                                    Care Discussion
+                                </a>
+                            </h3>
+
+                            <p>
+                                A checklist of non-sensitive questions about
+                                routines and support preferences.
+                            </p>
+
+                            <div class="blog-article-meta">
+                                <span>
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                    Sample date
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                    4 min read
+                                </span>
+                            </div>
+
+                            <a href="blogreadmore.html" class="blog-card-link"
+                                aria-label="Read more about choosing topics for your first care discussion">
+                                Read More
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="blog-empty-message" id="blogEmptyMessage" hidden>
+                    No articles are available for this category yet.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- ========================================
+         4. FINAL CTA
+    ========================================= -->
+        <section class="blog-section" aria-labelledby="blog-cta-title">
+            <div class="blog-container">
+
+                <div class="blog-cta">
+                    <span class="blog-eyebrow">EXPLORE YOUR NEXT STEP</span>
+
+                    <h2 id="blog-cta-title">
+                        Explore More About Home-Care Support
+                    </h2>
+
+                    <p>
+                        Browse the sample service information or visit the
+                        demonstration Help Form.
+                    </p>
+
+                    <div class="blog-cta-actions">
+                        <a href="services.html" class="blog-button">
+                            View Services
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="contact.html#help-section" class="blog-button blog-button-outline">
+                            Get Help
+                        </a>
+                    </div>
+
+                    <p class="blog-demo-notice">
+                        Project demonstration only. This website does not
+                        create bookings, provide medical advice, or offer
+                        emergency assistance.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Agency information -->
+            <div class="footer-about">
+                <a href="index.html" class="brand">
+                    <span class="brand-icon">
+                        <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="brand-logo">
+                    </span>
+
+                    <span class="brand-text">
+                        <span class="brand-name">Meridian Home Nursing</span>
+                        <span class="brand-subtitle">
+                            Home Nursing and Patient Care
+                        </span>
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    Caring support in the comfort of home. Explore our home
+                    nursing, elder care, and patient care services for your
+                    loved ones.
+                </p>
+
+                <!-- Demo placeholders: add real profile URLs to enable -->
+                <div class="footer-socials" aria-label="Social media">
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="Facebook — profile link coming soon" title="Facebook — coming soon">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="Instagram — profile link coming soon" title="Instagram — coming soon">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="LinkedIn — profile link coming soon" title="LinkedIn — coming soon">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="footer-social-link" role="link" aria-disabled="true"
+                        aria-label="YouTube — profile link coming soon" title="YouTube — coming soon">
+                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Company -->
+            <nav class="footer-column" aria-label="Footer navigation">
+                <h2 class="footer-heading">Company</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Services -->
+            <nav class="footer-column" aria-label="Care services">
+                <h2 class="footer-heading">Our Services</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="services.html">Post-Surgery Care</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Elder Care</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Patient Care</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Injections &amp; Dressing</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Patient Care Support</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Resources -->
+            <nav class="footer-column" aria-label="Care services">
+                <h2 class="footer-heading">Resources</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Tutorials</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Support</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div>
+            <div class="footer-bottom">
+                <div>&copy; GreenFlow. All rights Reserved.</div>
+                <div class="footer-bottom-nav">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <script src="header.js"></script>
+    <script src="blog.js"></script>
+
+</body>
+
+</html>

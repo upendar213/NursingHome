@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Home Care Service | Meridian Home Nursing</title>
+    <meta name="description"
+        content="Request an in-home nursing and patient care consultation with Meridian Home Nursing.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="bookserivceform.css">
+    
+</head>
+
+<body class="booking-body">
+
+    <!-- ========================================
+         1. TOP MINIMAL UTILITY BAR
+    ========================================= -->
+    <header class="bk-topbar">
+        <div class="bk-topbar-container">
+
+
+            <!-- Right: RTL & Dark Mode Toggles -->
+            <div class="bk-toggles">
+                <button type="button" class="bk-toggle-btn" id="rtlToggle" aria-label="Toggle text direction">
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                    <span>RTL</span>
+                </button>
+
+                <button type="button" class="bk-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================
+         2. MAIN STANDALONE CONTAINER
+    ========================================= -->
+    <main class="bk-page-wrapper">
+
+        <!-- Standalone Brand & Title Section (Above the card) -->
+        <div class="bk-brand-heading">
+            <a href="index.html" class="bk-brand-link" aria-label="Meridian Home Nursing Home">
+                <img src="Images/Headerlogo.jpg" alt="Meridian Home Nursing logo" class="bk-brand-logo" width="60"
+                    height="60">
+            </a>
+            <h2 class="bk-brand-name">Meridian Home Nursing</h2>
+            <p class="bk-brand-subtitle">Home Nursing and Patient Care</p>
+
+            <h1 class="bk-main-title">Book Home Care Service</h1>
+            <p class="bk-intro-subtitle">
+                Fill in your care details below to request a personalized care consultation.
+            </p>
+        </div>
+
+        <!-- 3. SEPARATE BOOKING FORM CARD -->
+        <section class="bk-card" aria-labelledby="bk-form-title">
+            <h2 id="bk-form-title" class="sr-only">Booking Form</h2>
+
+            <form id="bookingServiceForm" class="bk-form" novalidate>
+
+                <!-- Service Selection -->
+                <div class="bk-form-group">
+                    <label for="careService">Service Required <span class="bk-required">*</span></label>
+                    <select id="careService" name="careService" required>
+                        <option value="" disabled selected>Select a care service...</option>
+                        <option value="post-surgery">Post-Surgery Care</option>
+                        <option value="elder-care">Elder Care</option>
+                        <option value="injections-dressing">Injections &amp; Wound Dressing</option>
+                        <option value="patient-care">Patient Care Support</option>
+                        <option value="general-assessment">General Care Assessment</option>
+                    </select>
+                </div>
+
+                <!-- Shift / Duration -->
+                <div class="bk-form-group">
+                    <label for="careShift">Care Duration / Shift <span class="bk-required">*</span></label>
+                    <select id="careShift" name="careShift" required>
+                        <option value="" disabled selected>Select preferred duration...</option>
+                        <option value="hourly">Single Visit (2–4 Hours)</option>
+                        <option value="half-day">Half Day Support (6–8 Hours)</option>
+                        <option value="full-day">Full Day Support (12 Hours)</option>
+                        <option value="live-in">24/7 Live-In Care</option>
+                    </select>
+                </div>
+
+                <!-- Date & Time Slot (2 Columns) -->
+                <div class="bk-form-row">
+                    <div class="bk-form-group">
+                        <label for="startDate">Preferred Start Date <span class="bk-required">*</span></label>
+                        <input type="date" id="startDate" name="startDate" required>
+                    </div>
+
+                    <div class="bk-form-group">
+                        <label for="preferredSlot">Preferred Time Slot <span class="bk-required">*</span></label>
+                        <select id="preferredSlot" name="preferredSlot" required>
+                            <option value="" disabled selected>Select time slot...</option>
+                            <option value="morning">Morning (8:00 AM – 12:00 PM)</option>
+                            <option value="afternoon">Afternoon (12:00 PM – 4:00 PM)</option>
+                            <option value="evening">Evening (4:00 PM – 8:00 PM)</option>
+                            <option value="flexible">Flexible / Any Time</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Patient Relationship & Mobility (2 Columns) -->
+                <div class="bk-form-row">
+                    <div class="bk-form-group">
+                        <label for="patientRelationship">Patient Relationship <span class="bk-required">*</span></label>
+                        <select id="patientRelationship" name="patientRelationship" required>
+                            <option value="" disabled selected>Select relationship...</option>
+                            <option value="self">Self</option>
+                            <option value="parent">Parent / In-Law</option>
+                            <option value="spouse">Spouse</option>
+                            <option value="child">Child</option>
+                            <option value="relative">Other Family Member</option>
+                        </select>
+                    </div>
+
+                    <div class="bk-form-group">
+                        <label for="mobilityStatus">Mobility Level <span class="bk-required">*</span></label>
+                        <select id="mobilityStatus" name="mobilityStatus" required>
+                            <option value="" disabled selected>Select mobility status...</option>
+                            <option value="independent">Fully Mobile / Independent</option>
+                            <option value="assistance">Walking Assistance Needed</option>
+                            <option value="wheelchair">Wheelchair Assisted</option>
+                            <option value="bedridden">Bedridden / Complete Care</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Full Name & Phone Number (2 Columns) -->
+                <div class="bk-form-row">
+                    <div class="bk-form-group">
+                        <label for="requesterName">Full Name <span class="bk-required">*</span></label>
+                        <input type="text" id="requesterName" name="requesterName" placeholder="Your full name"
+                            maxlength="100" required>
+                    </div>
+
+                    <div class="bk-form-group">
+                        <label for="requesterPhone">Phone Number <span class="bk-required">*</span></label>
+                        <input type="tel" id="requesterPhone" name="requesterPhone" placeholder="+91 98765 43210"
+                            maxlength="15" required>
+                    </div>
+                </div>
+
+                <!-- Email Address & City/Area (2 Columns) -->
+                <div class="bk-form-row">
+                    <div class="bk-form-group">
+                        <label for="requesterEmail">Email Address <span class="bk-required">*</span></label>
+                        <input type="email" id="requesterEmail" name="requesterEmail" placeholder="name@example.com"
+                            maxlength="120" required>
+                    </div>
+
+                    <div class="bk-form-group">
+                        <label for="requesterCity">City / Service Area <span class="bk-required">*</span></label>
+                        <input type="text" id="requesterCity" name="requesterCity" placeholder="E.g. Hyderabad"
+                            maxlength="80" required>
+                    </div>
+                </div>
+
+                <!-- Special Notes / Preferences -->
+                <div class="bk-form-group">
+                    <label for="careNotes">Special Notes or Preferences (Optional)</label>
+                    <textarea id="careNotes" name="careNotes" rows="3"
+                        placeholder="Mention caregiver language preferences, dietary habits, home access instructions, or specific care requests..."
+                        maxlength="600"></textarea>
+                </div>
+
+                <!-- Demo Consent Checkbox -->
+                <div class="bk-checkbox-group">
+                    <label class="bk-checkbox-label">
+                        <input type="checkbox" id="demoConsent" name="demoConsent" required>
+                        <span>I understand this is a demonstration booking request. No actual payment or live medical
+                            booking is processed.</span>
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="bk-submit-btn" id="bookingSubmitBtn">
+                    <span>Submit Booking Request</span>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+
+                <!-- Live Demo Confirmation Message -->
+                <div class="bk-status-msg" id="bookingStatusMsg" role="status" aria-live="polite" hidden></div>
+
+                <!-- Trust Footer Inside Card -->
+                <div class="bk-card-footer">
+                    <p>
+                        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        Privacy Protected &bull; Educational Demo Website &bull; No Booking Fees
+                    </p>
+                </div>
+
+            </form>
+        </section>
+
+        <!-- Copyright Note Below Card -->
+        <footer class="bk-copyright">
+            <p>&copy; 2026 Meridian Home Nursing. All rights reserved. Demo educational project.</p>
+        </footer>
+
+    </main>
+    <script src="bookserviceform.js"></script>
+ 
+</body>
+
+</html>

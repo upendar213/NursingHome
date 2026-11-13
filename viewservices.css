@@ -1,0 +1,875 @@
+/* ========================================
+   SERVICE DETAILS — COLORS
+======================================== */
+
+.service-details-page {
+    --sd-primary: #0E7C7B;
+    --sd-hover: #0A5F5E;
+    --sd-on-primary: #FFFFFF;
+
+    --sd-background: #FBFDFD;
+    --sd-surface: #FFFFFF;
+    --sd-soft: #E6F4F1;
+
+    --sd-text: #22303C;
+    --sd-muted: #5F6B76;
+    --sd-border: #D8E7E3;
+
+    background-color: var(--sd-background);
+    color: var(--sd-text);
+    font-family: inherit;
+}
+
+/* ========================================
+   DARK MODE
+======================================== */
+
+body.dark-mode .service-details-page {
+    --sd-primary: #74D8CE;
+    --sd-hover: #9AE8DF;
+    --sd-on-primary: #102628;
+
+    --sd-background: #0F1C21;
+    --sd-surface: #14262C;
+    --sd-soft: #1A363A;
+
+    --sd-text: #EAF4F4;
+    --sd-muted: #B6C7CE;
+    --sd-border: #31505A;
+}
+
+/* ========================================
+   SCOPED BASE
+======================================== */
+
+.service-details-page,
+.service-details-page *,
+.service-details-page *::before,
+.service-details-page *::after {
+    box-sizing: border-box;
+}
+
+.service-details-page img {
+    display: block;
+    max-width: 100%;
+}
+
+.service-details-page a:focus-visible,
+.service-details-page summary:focus-visible {
+    outline: 3px solid var(--sd-primary);
+    outline-offset: 5px;
+}
+
+.service-details-page .sd-container {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+}
+
+.service-details-page .sd-section {
+    margin: 0;
+    padding: 80px 9%;
+    scroll-margin-top: 120px;
+}
+
+.service-details-page .sd-soft-section {
+    background-color: var(--sd-soft);
+}
+
+.service-details-page .sd-eyebrow {
+    display: inline-block;
+    line-height: 1.7;
+    padding: 6px 14px;
+    background-color: #FFFFFF;
+    color: var(--primary, #0E7C7B);
+    border: 1px solid var(--border, #D8E7E3);
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+body.dark-mode .service-details-page .sd-eyebrow {
+    background-color: #1A363A;
+    border-color: #31505A;
+    color: #74D8CE;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.service-details-page .sd-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    max-width: 100%;
+    min-height: 50px;
+    padding: 14px 22px;
+
+    background-color: var(--sd-primary);
+    color: var(--sd-on-primary);
+
+    border: 1px solid var(--sd-primary);
+    border-radius: 6px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.service-details-page .sd-button:hover {
+    background-color: var(--sd-hover);
+    border-color: var(--sd-hover);
+}
+
+.service-details-page .sd-button>i {
+    flex-shrink: 0;
+    font-size: 12px;
+}
+
+.service-details-page .sd-button-outline {
+    background-color: transparent;
+    color: var(--sd-primary);
+}
+
+.service-details-page .sd-button-outline:hover {
+    background-color: var(--sd-soft);
+    color: var(--sd-primary);
+    border-color: var(--sd-primary);
+}
+
+/* ========================================
+   1. INTRODUCTION
+======================================== */
+
+.service-details-page .sd-intro {
+    margin: 0;
+    padding: 32px 9% 64px;
+
+    background-color: var(--sd-soft);
+    border-bottom: 1px solid var(--sd-border);
+}
+
+/* Breadcrumb */
+.service-details-page .sd-breadcrumb {
+    margin-bottom: 48px;
+}
+
+.service-details-page .sd-breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-details-page .sd-breadcrumb li {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--sd-muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.service-details-page .sd-breadcrumb li+li::before {
+    content: "/";
+    color: var(--sd-muted);
+}
+
+.service-details-page .sd-breadcrumb a {
+    color: var(--sd-text);
+    text-decoration: none;
+}
+
+.service-details-page .sd-breadcrumb a:hover {
+    color: var(--sd-primary);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Intro text */
+.service-details-page .sd-intro-content {
+    max-width: 760px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.service-details-page .sd-intro h1 {
+    margin: 0 0 22px;
+
+    color: var(--sd-text);
+    font-size: clamp(36px, 4vw, 56px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.service-details-page .sd-intro h1 span {
+    color: var(--sd-primary);
+}
+
+.service-details-page .sd-intro-content>p {
+    max-width: 640px;
+    margin: 0 auto;
+
+    color: var(--sd-muted);
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+/* Service jump links */
+.service-details-page .sd-jump-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+
+    margin-top: 34px;
+}
+
+.service-details-page .sd-jump-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+    padding: 11px 18px;
+
+    background-color: var(--sd-surface);
+    color: var(--sd-text);
+
+    border: 1px solid var(--sd-border);
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: center;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.service-details-page .sd-jump-nav a:hover {
+    background-color: var(--sd-primary);
+    color: var(--sd-on-primary);
+    border-color: var(--sd-primary);
+}
+
+/* ========================================
+   SERVICE SECTION LAYOUTS
+======================================== */
+
+.service-details-page .sd-service-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 64px;
+}
+
+/* Alternate sections: text left, image right */
+.service-details-page .sd-service-reverse {
+    grid-template-columns:
+        minmax(0, 1.1fr) minmax(0, 1fr);
+}
+
+.service-details-page .sd-service-reverse .sd-service-image {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.service-details-page .sd-service-reverse .sd-service-content {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* ========================================
+   SERVICE IMAGES
+======================================== */
+
+.service-details-page .sd-service-image {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+
+    background-color: var(--sd-surface);
+    border: 1px solid var(--sd-border);
+    border-radius: 16px;
+}
+
+.service-details-page .sd-service-image>img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9 / 10;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Image label */
+.service-details-page .sd-image-label {
+    position: absolute;
+    inset-inline: 20px;
+    inset-block-end: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 16px;
+
+    background-color: var(--sd-surface);
+    color: var(--sd-text);
+
+    border: 1px solid var(--sd-border);
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.service-details-page .sd-image-label>span {
+    display: grid;
+    place-items: center;
+    flex: 0 0 36px;
+
+    width: 36px;
+    height: 36px;
+
+    background-color: var(--sd-soft);
+    color: var(--sd-primary);
+    border-radius: 6px;
+
+    font-size: 13px;
+}
+
+/* ========================================
+   SERVICE CONTENT
+======================================== */
+
+.service-details-page .sd-service-content {
+    min-width: 0;
+}
+
+.service-details-page .sd-service-content>h2 {
+    margin: 0 0 20px;
+
+    color: var(--sd-text);
+    font-size: clamp(28px, 3vw, 40px);
+    line-height: 1.25;
+    letter-spacing: -0.6px;
+}
+
+.service-details-page .sd-service-content>p {
+    margin: 0 0 26px;
+
+    color: var(--sd-muted);
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.service-details-page .sd-service-content>h3 {
+    margin: 0 0 20px;
+
+    color: var(--sd-text);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Feature list */
+.service-details-page .sd-feature-list {
+    display: grid;
+    gap: 18px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-details-page .sd-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.service-details-page .sd-feature-list li>i {
+    flex-shrink: 0;
+    margin-top: 5px;
+
+    color: var(--sd-primary);
+    font-size: 16px;
+}
+
+.service-details-page .sd-feature-list h4 {
+    margin: 0 0 5px;
+
+    color: var(--sd-text);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.service-details-page .sd-feature-list p {
+    margin: 0;
+
+    color: var(--sd-muted);
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+/* Service note */
+.service-details-page .sd-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin: 28px 0;
+    padding: 18px;
+
+    background-color: var(--sd-surface);
+    border: 1px solid var(--sd-border);
+    border-inline-start: 3px solid var(--sd-primary);
+    border-radius: 6px;
+}
+
+.service-details-page .sd-note>i {
+    flex-shrink: 0;
+    margin-top: 4px;
+    color: var(--sd-primary);
+}
+
+.service-details-page .sd-note p {
+    margin: 0;
+
+    color: var(--sd-muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   6. FAQS
+======================================== */
+
+.service-details-page .sd-faq-container {
+    max-width: 900px;
+}
+
+.service-details-page .sd-section-heading {
+    max-width: 720px;
+    margin: 0 auto 36px;
+    text-align: center;
+}
+
+.service-details-page .sd-section-heading h2 {
+    margin: 0 0 16px;
+
+    color: var(--sd-text);
+    font-size: clamp(27px, 3vw, 36px);
+    line-height: 1.3;
+}
+
+.service-details-page .sd-section-heading p {
+    margin: 0;
+
+    color: var(--sd-muted);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.service-details-page .sd-faq-list {
+    display: grid;
+    gap: 14px;
+}
+
+.service-details-page .sd-faq {
+    padding: 22px 24px;
+
+    background-color: var(--sd-surface);
+    border: 1px solid var(--sd-border);
+    border-radius: 8px;
+}
+
+.service-details-page .sd-faq summary {
+    color: var(--sd-text);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7;
+    cursor: pointer;
+}
+
+.service-details-page .sd-faq[open] summary {
+    color: var(--sd-primary);
+}
+
+.service-details-page .sd-faq p {
+    margin: 16px 0 0;
+
+    color: var(--sd-muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+/* ========================================
+   7. CTA
+======================================== */
+
+.service-details-page .sd-cta-section {
+    background-color: var(--sd-soft);
+}
+
+.service-details-page .sd-cta {
+    padding: 48px 32px;
+
+    background-color: var(--sd-surface);
+    border: 1px solid var(--sd-border);
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.service-details-page .sd-cta h2 {
+    max-width: 760px;
+    margin: 0 auto 18px;
+
+    color: var(--sd-text);
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.3;
+}
+
+.service-details-page .sd-cta>p {
+    max-width: 620px;
+    margin: 0 auto 28px;
+
+    color: var(--sd-muted);
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.service-details-page .sd-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+.service-details-page .sd-cta .sd-demo-notice {
+    max-width: 700px;
+    margin: 26px auto 0;
+
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   RTL
+======================================== */
+
+html[dir="rtl"] .service-details-page .sd-button>i {
+    transform: rotate(180deg);
+}
+
+/* ========================================
+   SMALL LAPTOP
+======================================== */
+
+@media (max-width: 1200px) {
+    .service-details-page .sd-service-layout {
+        gap: 36px;
+    }
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 992px) {
+    .service-details-page .sd-section {
+        padding: 64px 9%;
+    }
+
+    .service-details-page .sd-service-layout,
+    .service-details-page .sd-service-reverse {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 34px;
+    }
+
+    .service-details-page .sd-service-reverse .sd-service-image,
+    .service-details-page .sd-service-reverse .sd-service-content {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .service-details-page .sd-service-image {
+        width: 100%;
+        max-width: 680px;
+        margin-inline: auto;
+    }
+
+    .service-details-page .sd-service-image>img {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 576px) {
+    .service-details-page .sd-intro {
+        padding: 24px 7% 48px;
+    }
+
+    .service-details-page .sd-breadcrumb {
+        margin-bottom: 34px;
+    }
+
+    .service-details-page .sd-intro h1 {
+        font-size: 34px;
+        letter-spacing: -0.5px;
+    }
+
+    .service-details-page .sd-intro-content>p {
+        font-size: 16px;
+    }
+
+    .service-details-page .sd-jump-nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .service-details-page .sd-jump-nav a {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .service-details-page .sd-section {
+        padding: 48px 7%;
+        scroll-margin-top: 180px;
+    }
+
+    .service-details-page .sd-service-content>h2 {
+        font-size: 28px;
+    }
+
+    .service-details-page .sd-image-label {
+        inset-inline: 12px;
+        inset-block-end: 12px;
+
+        gap: 10px;
+        padding: 10px 12px;
+
+        font-size: 12px;
+    }
+
+    .service-details-page .sd-service-content>.sd-button {
+        width: 100%;
+    }
+
+    .service-details-page .sd-faq {
+        padding: 20px 18px;
+    }
+
+    .service-details-page .sd-faq summary {
+        font-size: 15px;
+    }
+
+    .service-details-page .sd-cta {
+        padding: 32px 20px;
+    }
+
+    .service-details-page .sd-cta-actions {
+        flex-direction: column;
+    }
+
+    .service-details-page .sd-cta-actions .sd-button {
+        width: 100%;
+    }
+}
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .service-details-page .sd-button,
+    .service-details-page .sd-jump-nav a {
+        transition: none;
+    }
+}
+
+/* ========================================
+   TOP HERO SECTION
+========================================= */
+
+.service-details-page .sd-hero {
+    position: relative;
+    isolation: isolate;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 560px;
+    padding: 100px 9%;
+
+    background-color: #102C31;
+    background-image: url("Images/viewservice1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    text-align: center;
+}
+
+/* Overlay keeps the text readable over the image */
+.service-details-page .sd-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(135deg,
+            rgba(6, 26, 30, 0.82),
+            rgba(6, 26, 30, 0.62));
+
+    pointer-events: none;
+}
+
+.service-details-page .sd-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 850px;
+    margin-inline: auto;
+}
+
+.service-details-page .sd-hero-eyebrow {
+    display: inline-block;
+
+    border-radius: 8px;
+    line-height: 1.6;
+    padding: 6px 14px;
+    background-color: #FFFFFF;
+    color: var(--primary, #0E7C7B);
+    border: 1px solid var(--border, #D8E7E3);
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+body.dark-mode .service-details-page .sd-hero-eyebrow {
+    background-color: #1A363A;
+    border-color: #31505A;
+    color: #74D8CE;
+}
+
+.service-details-page .sd-hero h1 {
+    margin: 0 0 24px;
+
+    color: #FFFFFF;
+
+    font-size: clamp(36px, 4.5vw, 64px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.service-details-page .sd-hero-content>p {
+    max-width: 650px;
+    margin: 0 0 32px;
+
+    color: #EDF6F5;
+
+    font-size: 18px;
+    line-height: 1.85;
+}
+
+.service-details-page .sd-hero .sd-button {
+    align-self: center;
+}
+
+/* Preserve the existing introduction's heading design */
+.service-details-page .sd-intro h2 {
+    margin: 0 0 22px;
+
+    color: var(--sd-text);
+    font-size: clamp(36px, 4vw, 56px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.service-details-page .sd-intro h2 span {
+    color: var(--sd-primary);
+}
+
+/* ========================================
+   HERO: TABLET
+========================================= */
+
+@media (max-width: 992px) {
+    .service-details-page .sd-hero {
+        min-height: 500px;
+        padding: 80px 9%;
+    }
+}
+
+/* ========================================
+   HERO: MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+    .service-details-page .sd-hero {
+        min-height: 460px;
+        padding: 64px 7%;
+    }
+
+    .service-details-page .sd-hero-eyebrow {
+        margin-bottom: 20px;
+        padding: 7px 14px;
+
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .service-details-page .sd-hero h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: -0.5px;
+    }
+
+    .service-details-page .sd-hero-content>p {
+        margin-bottom: 28px;
+        font-size: 16px;
+    }
+
+    .service-details-page .sd-intro h2 {
+        font-size: 34px;
+        letter-spacing: -0.5px;
+    }
+}
