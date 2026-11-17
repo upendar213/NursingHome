@@ -809,7 +809,7 @@ body.dark-mode .contact-page .contact-eyebrow {
     position: relative;
 
     width: 100%;
-    min-height: 630px;
+    min-height: 620px;
 
     background-image:
         linear-gradient(rgba(14, 34, 38, 0.72),
@@ -985,3 +985,8 @@ body.dark-mode .contact-page .contact-hero-eyebrow {
         width: 100%;
     }
 }
+
+
+
+
+
