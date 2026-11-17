@@ -690,7 +690,6 @@ body.dark-mode .m-process-card {
     transform: translateX(6px);
 }
 
-body.dark-mode .m-process-card.is-active,
 body.dark-mode .m-process-card:hover {
     border-color: #74D8CE;
 }
