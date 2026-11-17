@@ -684,7 +684,6 @@ body.dark-mode .m-process-card {
     border-color: #31505A;
 }
 
-.m-process-card.is-active,
 .m-process-card:hover {
     border-color: var(--primary, #0E7C7B);
     box-shadow: 0 8px 24px rgba(14, 124, 123, 0.12);
@@ -1179,7 +1178,4 @@ body.dark-mode .m-cta-disclaimer {
         width: 100%;
     }
     
-}
-.m-container m-hero-container{
-
 }
